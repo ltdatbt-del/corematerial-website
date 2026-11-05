@@ -42,8 +42,7 @@ textarea{width:100%;height:120px;font:12px/1.4 ui-monospace,monospace;padding:10
     <h2>Thông tin</h2>
     <div class="presets">
       <button type="button" data-p="info">info@ — Phòng Kinh doanh</button>
-      <button type="button" data-p="phuc">Đỗ Đức Phúc</button>
-      <button type="button" data-p="blank">Trống</button>
+      <button type="button" data-p="blank">Nhân viên mới</button>
     </div>
     <label for="name">Họ tên / Bộ phận</label><input id="name">
     <label for="title">Chức danh (Tiếng Việt)</label><input id="title">
@@ -69,7 +68,6 @@ textarea{width:100%;height:120px;font:12px/1.4 ui-monospace,monospace;padding:10
 <script>
 const P={
   info:{name:"Core Material JSC",title:"Phòng Kinh doanh",titleEn:"Sales Department",mobile:"",email:"info@corematerial.vn",hotline:"0938.903.557"},
-  phuc:{name:"Đỗ Đức Phúc",title:"Chủ tịch HĐQT",titleEn:"Chairman",mobile:"0942 637 272",email:"phuc.dd@corematerial.vn",hotline:"0938.903.557"},
   blank:{name:"",title:"",titleEn:"",mobile:"",email:"@corematerial.vn",hotline:"0938.903.557"}
 };
 const F=["name","title","titleEn","mobile","email","hotline"];
@@ -121,7 +119,9 @@ F.forEach(f=>document.getElementById(f).addEventListener("input",render));
 document.getElementById("copy").onclick=async()=>{
   const m=document.getElementById("msg");const h=build();
   try{await navigator.clipboard.write([new ClipboardItem({"text/html":new Blob([h],{type:"text/html"}),"text/plain":new Blob([document.getElementById("sig").innerText],{type:"text/plain"})})]);m.textContent="Đã copy — dán (Ctrl+V) vào ô chữ ký trong Outlook."}
-  catch(e){const r=document.createRange();r.selectNodeContents(document.getElementById("sig"));const s=getSelection();s.removeAllRanges();s.addRange(r);m.textContent="Đã chọn sẵn chữ ký — bấm Ctrl+C để copy."}
+  catch(e){const r=document.createRange();r.selectNodeContents(document.getElementById("sig"));const s=getSelection();s.removeAllRanges();s.addRange(r);
+    let ok=false;try{ok=document.execCommand("copy")}catch(_){}
+    m.textContent=ok?"Đã copy — dán (Ctrl+V) vào ô chữ ký trong Outlook.":"Đã chọn sẵn chữ ký — bấm Ctrl+C để copy."}
 };
 document.getElementById("code").onclick=()=>{const t=document.getElementById("html");t.style.display=t.style.display==="block"?"none":"block"};
 load(new URLSearchParams(location.search).get("p")||"info");
