@@ -137,7 +137,7 @@ ARTICLES = [
 
 <h2>Ý nghĩa với vữa khô và xi măng trắng</h2>
 <p>Tư duy của LC3 – <b>thay clinker bằng vật liệu khoáng có phát thải thấp</b> – cũng là tư duy của các nhà sản xuất vữa khô và xi măng trắng phối trộn: dùng xỉ lò cao, bột đá, đất sét nung… để vừa giảm giá vốn, vừa giảm dấu chân carbon. Thách thức nằm ở việc kiểm soát chất lượng nguyên liệu đầu vào và tối ưu cấp phối trong phòng Lab.</p>
-<div class="note"><b>Góc nhìn Core Material:</b> nghiên cứu tỷ lệ phối trộn tối ưu giữa xi măng trắng gốc, xỉ lò cao và bột đá là một trong những hướng R&amp;D trọng tâm của chúng tôi – cùng một logic với LC3: giữ tính năng, giảm clinker.</div>
+<div class="note"><b>Góc nhìn Core Material:</b> xu hướng giảm clinker cũng là hướng mà nhiều nhà sản xuất vữa khô và xi măng hỗn hợp đang theo đuổi. Việc áp dụng cần dựa trên thử nghiệm cụ thể cho từng công thức và nguồn nguyên liệu.</div>
 """,
 "sources": [
     ("Scrivener K. và cộng sự – Limestone Calcined Clay Cements (LC3), EPFL Infoscience", "https://infoscience.epfl.ch/record/286379"),
@@ -176,7 +176,7 @@ ARTICLES = [
 
 <h2>Từ phế liệu đến vật liệu cao cấp</h2>
 <p>Chuỗi giá trị của hạt thủy tinh trang trí gồm: thu gom phế liệu thủy tinh, gốm, đá → làm sạch → nghiền → sàng phân cỡ → <b>tách màu bằng máy quang học</b> → (tùy chọn) bo tròn cạnh → đóng gói theo màu và cỡ. Khâu tách màu quyết định độ đồng đều giữa các lô – yếu tố mà kiến trúc sư và nhà thầu terrazzo đặc biệt quan tâm.</p>
-<div class="note"><b>Góc nhìn Core Material:</b> chúng tôi phát triển dòng hạt thủy tinh và đá màu tái chế với cỡ phổ biến 6–9 mm, dạng mảnh sắc cạnh và bo tròn, phục vụ terrazzo và bê tông nghệ thuật.</div>
+<div class="note"><b>Góc nhìn Core Material:</b> Core Material cung cấp vật liệu trang trí như hạt đá mài, hạt thủy tinh và bột màu; vật liệu tái chế là một hướng phát triển đang được đánh giá về nguồn, độ ổn định và điều kiện pháp lý.</div>
 """,
 "sources": [
     ("Trending in Terrazzo – Glass Aggregates, National Terrazzo & Mosaic Association", "https://ntma.com/trending-in-terrazzo/"),
@@ -224,7 +224,7 @@ ARTICLES = [
 <li>Diện tích lọc bụi và hiệu suất lọc có đáp ứng quy chuẩn khí thải của địa phương?</li>
 <li>Nhà cung cấp hỗ trợ lắp đặt, chạy thử, đào tạo vận hành và cung ứng phụ tùng ra sao?</li>
 </ul>
-<div class="note"><b>Góc nhìn Core Material:</b> dây chuyền cát khô của chúng tôi sử dụng lồng sấy quay 3 tầng công suất thiết kế 15 tấn/giờ, kết hợp lọc bụi xung và sàng rung tách cỡ FM 1,5 / FM 2,4.</div>
+<div class="note"><b>Góc nhìn Core Material:</b> khi lựa chọn nguồn cát khô, nên yêu cầu nhà cung cấp cung cấp thông tin về công nghệ sấy, kiểm soát bụi và phiếu kiểm tra độ ẩm, cấp phối theo từng lô.</div>
 """,
 "sources": [],
 },
