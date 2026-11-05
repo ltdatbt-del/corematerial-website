@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Chữ ký email — Core Material JSC</title>
+<link rel="icon" type="image/svg+xml" href="../img/core-mark.svg">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Montserrat,Arial,sans-serif;background:#F7F5F0;color:#111;font-size:14px;line-height:1.55}
+header{background:#111;color:#fff;padding:18px 28px;display:flex;align-items:center;gap:14px}
+header img{height:40px}
+header h1{font-size:15px;font-weight:600;letter-spacing:.04em;border-left:1px solid #444;padding-left:14px;color:#D4A835}
+.wrap{max-width:1180px;margin:0 auto;padding:30px 28px 60px;display:grid;grid-template-columns:340px 1fr;gap:28px}
+.panel{background:#fff;border:1px solid #E0DCD2;border-top:3px solid #D4A835;border-radius:3px;padding:24px}
+.panel h2{font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:#6B6B6B;margin-bottom:16px}
+label{display:block;font-size:12px;font-weight:600;color:#3d3d3d;margin:12px 0 5px}
+input{width:100%;font:inherit;padding:10px 12px;border:1px solid #E0DCD2;border-radius:3px;background:#F7F5F0}
+input:focus{outline:0;border-color:#D4A835;background:#fff}
+.presets{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:6px}
+.presets button{font:inherit;font-size:12.5px;padding:6px 11px;border:1px solid #E0DCD2;border-radius:30px;background:#F7F5F0;cursor:pointer}
+.presets button:hover{border-color:#111}
+.btns{display:flex;gap:10px;flex-wrap:wrap;margin:18px 0 10px}
+.btn{font:inherit;font-weight:600;font-size:13.5px;padding:12px 18px;border-radius:3px;border:1.5px solid #111;cursor:pointer;background:#fff;color:#111}
+.btn.primary{background:#111;color:#D4A835}
+.btn:hover{background:#D4A835;color:#111;border-color:#D4A835}
+#msg{font-size:13px;color:#0f6243;min-height:20px}
+.preview{background:#fff;border:1px solid #E0DCD2;border-radius:3px;padding:34px 30px;overflow:auto}
+.mock{font-size:13px;color:#6B6B6B;border-bottom:1px dashed #E0DCD2;padding-bottom:14px;margin-bottom:22px}
+.howto{margin-top:22px;font-size:13px;color:#3d3d3d}
+.howto ol{padding-left:18px}.howto li{margin:4px 0}
+textarea{width:100%;height:120px;font:12px/1.4 ui-monospace,monospace;padding:10px;border:1px solid #E0DCD2;margin-top:10px;display:none}
+@media(max-width:900px){.wrap{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header><img src="lockupw.png" alt="Core Material JSC"><h1>Tạo chữ ký email</h1></header>
+<div class="wrap">
+  <div class="panel">
+    <h2>Thông tin</h2>
+    <div class="presets">
+      <button type="button" data-p="info">info@ — Phòng Kinh doanh</button>
+      <button type="button" data-p="phuc">Đỗ Đức Phúc</button>
+      <button type="button" data-p="blank">Trống</button>
+    </div>
+    <label for="name">Họ tên / Bộ phận</label><input id="name">
+    <label for="title">Chức danh (Tiếng Việt)</label><input id="title">
+    <label for="titleEn">Chức danh (English)</label><input id="titleEn">
+    <label for="mobile">Di động cá nhân (để trống nếu không hiện)</label><input id="mobile">
+    <label for="email">Email</label><input id="email">
+    <label for="hotline">Hotline công ty</label><input id="hotline">
+    <div class="btns">
+      <button class="btn primary" id="copy" type="button">Copy chữ ký</button>
+      <button class="btn" id="code" type="button">Xem mã HTML</button>
+    </div>
+    <div id="msg"></div>
+    <textarea id="html" readonly></textarea>
+    <div class="howto"><b>Cài vào Outlook (new):</b>
+      <ol><li>Bấm <b>Copy chữ ký</b>.</li><li>Outlook → ⚙ Settings → Account → <b>Signatures</b> → New signature.</li><li>Dán (Ctrl+V), đặt tên, Save; chọn làm chữ ký mặc định cho thư mới và thư trả lời.</li></ol>
+    </div>
+  </div>
+  <div class="preview">
+    <div class="mock">Kính gửi Quý khách,<br><br>Core Material xin gửi báo giá như tài liệu đính kèm.<br><br>Trân trọng,</div>
+    <div id="sig"></div>
+  </div>
+</div>
+<script>
+const P={
+  info:{name:"Core Material JSC",title:"Phòng Kinh doanh",titleEn:"Sales Department",mobile:"",email:"info@corematerial.vn",hotline:"0938.903.557"},
+  phuc:{name:"Đỗ Đức Phúc",title:"Chủ tịch HĐQT",titleEn:"Chairman",mobile:"0942 637 272",email:"phuc.dd@corematerial.vn",hotline:"0938.903.557"},
+  blank:{name:"",title:"",titleEn:"",mobile:"",email:"@corematerial.vn",hotline:"0938.903.557"}
+};
+const F=["name","title","titleEn","mobile","email","hotline"];
+const base=location.href.replace(/[^/]*$/,"");   // thư mục /email/ trên website đang chạy
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const tel=s=>"+84"+s.replace(/\D/g,"").replace(/^0/,"");
+function val(id){return document.getElementById(id).value.trim()}
+function build(){
+  const v=Object.fromEntries(F.map(f=>[f,esc(val(f))]));
+  const ff="Montserrat,Arial,Helvetica,sans-serif";
+  const td=`font-family:${ff};font-size:12.5px;color:#3d3d3d;padding:2px 0;line-height:18px`;
+  const ic=n=>`<img src="${base}${n}.png" width="16" height="16" alt="" style="display:block;border:0;width:16px;height:16px">`;
+  const row=(icon,html)=>`<tr><td width="24" valign="middle" style="padding:2px 8px 2px 0">${ic(icon)}</td><td valign="middle" style="${td}">${html}</td></tr>`;
+  const a=(href,t)=>`<a href="${href}" style="color:#111;text-decoration:none">${t}</a>`;
+  const titles=[v.title,v.titleEn].filter(Boolean).join(" &nbsp;|&nbsp; ");
+  let phones=a("tel:"+tel(val("hotline")),"Hotline: "+v.hotline);
+  if(v.mobile) phones=a("tel:"+tel(val("mobile")),v.mobile)+` <span style="color:#D4A835">&nbsp;•&nbsp;</span> `+phones;
+  return `<table cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;width:560px;max-width:100%;font-family:${ff}">
+<tr><td colspan="3" style="padding:0 0 14px 0">
+  <div style="font-family:${ff};font-size:18px;font-weight:700;color:#111;line-height:24px;letter-spacing:-0.2px">${v.name}</div>
+  ${titles?`<div style="font-family:${ff};font-size:12px;font-weight:600;color:#B8901F;line-height:18px;letter-spacing:0.6px;text-transform:uppercase">${titles}</div>`:""}
+</td></tr>
+<tr><td colspan="3" style="border-top:2px solid #D4A835;font-size:0;line-height:0;height:14px">&nbsp;</td></tr>
+<tr>
+  <td valign="middle" width="190" style="padding:0 16px 0 0"><a href="https://www.corematerial.vn"><img src="${base}lockup.png" width="182" alt="Core Material JSC — Building Values, Enriching Life" style="display:block;border:0;width:182px;height:auto"></a></td>
+  <td width="1" style="border-left:1px solid #E0DCD2;font-size:0">&nbsp;</td>
+  <td valign="middle" style="padding:0 0 0 16px"><table cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse">
+    ${row("phone",phones)}
+    ${row("mail",a("mailto:"+v.email,v.email))}
+    ${row("web",a("https://www.corematerial.vn","www.corematerial.vn"))}
+    ${row("pin","114bis Trần Quốc Toản, P. Xuân Hòa, TP. Hồ Chí Minh")}
+  </table></td>
+</tr>
+<tr><td colspan="3" style="height:14px;font-size:0;line-height:0">&nbsp;</td></tr>
+<tr><td colspan="3" bgcolor="#111111" style="background:#111111;padding:9px 14px;font-family:${ff};font-size:10.5px;letter-spacing:2.4px;color:#ffffff;text-align:center">
+  INTEGRITY <span style="color:#D4A835">&nbsp;•&nbsp;</span> INNOVATION <span style="color:#D4A835">&nbsp;•&nbsp;</span> PARTNERSHIP
+</td></tr>
+<tr><td colspan="3" style="padding:8px 0 0 0;font-family:${ff};font-size:10px;line-height:14px;color:#8a8a8a">
+  CÔNG TY CỔ PHẦN CORE MATERIAL · MST 0319732343<br>
+  Email này và các tệp đính kèm có thể chứa thông tin bảo mật, chỉ dành cho người nhận. Nếu nhận nhầm, vui lòng thông báo cho người gửi và xóa email.<br>
+  <i>This email and any attachments may be confidential and intended solely for the addressee. If received in error, please notify the sender and delete it.</i>
+</td></tr>
+</table>`;
+}
+function render(){document.getElementById("sig").innerHTML=build();document.getElementById("html").value=build()}
+function load(k){F.forEach(f=>document.getElementById(f).value=P[k][f]);render()}
+document.querySelectorAll("[data-p]").forEach(b=>b.onclick=()=>load(b.dataset.p));
+F.forEach(f=>document.getElementById(f).addEventListener("input",render));
+document.getElementById("copy").onclick=async()=>{
+  const m=document.getElementById("msg");const h=build();
+  try{await navigator.clipboard.write([new ClipboardItem({"text/html":new Blob([h],{type:"text/html"}),"text/plain":new Blob([document.getElementById("sig").innerText],{type:"text/plain"})})]);m.textContent="Đã copy — dán (Ctrl+V) vào ô chữ ký trong Outlook."}
+  catch(e){const r=document.createRange();r.selectNodeContents(document.getElementById("sig"));const s=getSelection();s.removeAllRanges();s.addRange(r);m.textContent="Đã chọn sẵn chữ ký — bấm Ctrl+C để copy."}
+};
+document.getElementById("code").onclick=()=>{const t=document.getElementById("html");t.style.display=t.style.display==="block"?"none":"block"};
+load(new URLSearchParams(location.search).get("p")||"info");
+</script>
+</body>
+</html>
