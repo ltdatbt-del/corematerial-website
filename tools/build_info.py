@@ -38,7 +38,7 @@ def foot(rel):
 <p style="margin-top:14px;max-width:380px">Kênh chia sẻ kiến thức về vật liệu xây dựng, hóa chất chuyên dụng, máy móc và khoa học công nghệ – do Core Material JSC biên soạn.</p></div>
 <div><h4>Chuyên mục</h4><ul>{''.join(f'<li><a href="{rel}chuyen-muc/{k}.html">{e(v[0])}</a></li>' for k,v in CATEGORIES.items())}</ul></div>
 <div><h4>Core Material JSC</h4><ul><li><a href="https://www.corematerial.vn">www.corematerial.vn</a></li><li><a href="https://www.corematerial.vn/#san-pham">Sản phẩm</a></li><li><a href="https://www.corematerial.vn/#lien-he">Liên hệ báo giá</a></li><li>Hotline 0938.903.557</li></ul></div>
-</div><div class="fbot"><span>© 2026 Core Material JSC. Nội dung mang tính tham khảo kỹ thuật.</span><span>INTEGRITY · INNOVATION · PARTNERSHIP</span></div></div></footer>
+</div><div class="fbot"><span>© 2026 Công ty Cổ phần Khoa học Công nghệ Core Material. Nội dung mang tính tham khảo kỹ thuật.</span><span>INTEGRITY · INNOVATION · PARTNERSHIP</span></div></div></footer>
 </body></html>'''
 
 def ph(a, rel, cls="ph"):
