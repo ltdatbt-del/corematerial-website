@@ -5,7 +5,6 @@
   "assets": { "directory": "./public", "binding": "ASSETS", "html_handling": "none", "run_worker_first": true },
   // Form liên hệ: lưu yêu cầu vào KV + gửi email thông báo qua Cloudflare Email Routing (corematerial.info)
   "kv_namespaces": [{ "binding": "LEADS", "id": "c5798e091f25477398b3b943a7e55fa2" }],
-  // Bật lại khi Email Routing corematerial.info đã Active và info@corematerial.vn đã xác minh:
-  // "send_email": [{ "name": "MAILER", "destination_address": "info@corematerial.vn" }],
+  "send_email": [{ "name": "MAILER", "destination_address": "info@corematerial.vn" }],
   "vars": { "MAIL_FROM": "website@corematerial.info", "MAIL_TO": "info@corematerial.vn" }
 }
