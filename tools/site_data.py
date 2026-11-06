@@ -50,13 +50,16 @@ MATERIALS = [
 },
 {
  "id": "xi-mang-trang", "form": "Xi măng trắng", "name": "Xi măng trắng", "short": "Xi măng trắng",
- "img": "img/san-pham/xi-mang-trang.jpg",
+ "img": "img/san-pham/xi-mang-trang-coremat-bao.jpg",
+ "img_full": "img/san-pham/xi-mang-trang-coremat.jpg",
+ "img_caption": "Hình minh họa bao bì CoreMat dự kiến: bao 40 kg và Jumbo, cấp 42.5 / 52.5",
  "pledge": [("WHITENESS", "Độ trắng"), ("CONSISTENCY", "Tính ổn định"), ("STRENGTH", "Cường độ")],
  "intro": "Cung cấp xi măng trắng cho sản xuất vật liệu (vữa, keo dán gạch, bột trét, gạch terrazzo, sản phẩm trang trí) và cho thi công.",
  "points": [
    "Thông tin thành phần, cấp cường độ, độ trắng và xuất xứ được cung cấp theo từng sản phẩm cụ thể.",
    "Có chứng nhận chất lượng (COA) đi kèm theo lô hàng.",
    "Tư vấn lựa chọn loại xi măng trắng phù hợp với ứng dụng.",
+   "Đang phát triển dòng xi măng trắng phối trộn mang thương hiệu CoreMat (dự kiến bao 40 kg và Jumbo, cấp 42.5 / 52.5).",
  ],
  "slots": ["Bảng thông số theo từng mã sản phẩm (cấp cường độ, độ trắng, quy cách bao)"],
 },

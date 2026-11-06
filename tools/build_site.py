@@ -199,7 +199,7 @@ write("/gioi-thieu/", page("/gioi-thieu/", "Giới thiệu | Core Material JSC",
 # =================== VẬT LIỆU ===================
 blocks = []
 for i, m in enumerate(MATERIALS):
-    media = f'<img src="/{m["img"]}" alt="{e(m["name"])}" loading="lazy">' if m.get("img") else (slot("Ảnh sản phẩm thật") or '<div class="ph hex" style="aspect-ratio:4/3;border-radius:3px"><svg style="color:#fff;width:90px;height:105px"><use href="#cm"/></svg></div>')
+    media = (f'<figure style="margin:0"><img src="/{m.get("img_full") or m["img"]}" alt="{e(m.get("img_caption") or m["name"])}" loading="lazy">' + (f'<figcaption style="font-size:12px;color:var(--ink-3);margin-top:6px">{e(m["img_caption"])}</figcaption>' if m.get("img_caption") else "") + '</figure>') if m.get("img") else (slot("Ảnh sản phẩm thật") or '<div class="ph hex" style="aspect-ratio:4/3;border-radius:3px"><svg style="color:#fff;width:90px;height:105px"><use href="#cm"/></svg></div>')
     pl = ""
     if m.get("pledge"):
         pl = '<div class="pl">' + "".join(f'<span>{a}<small>{e(b)}</small></span>' for a,b in m["pledge"]) + '</div>'
