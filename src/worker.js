@@ -83,7 +83,7 @@ async function handleLead(request, env) {
     nhom: (Array.isArray(d.nhom) ? d.nhom : []).map((x) => clip(x, 60)).slice(0, 12),
     ten: clip(d.ten, 100), cty: clip(d.cty, 150), sdt: clip(d.sdt, 20), email: clip(d.email, 150),
     sanluong: clip(d.sanluong, 50), ungdung: clip(d.ungdung, 200), nangsuat: clip(d.nangsuat, 100),
-    diadiem: clip(d.diadiem, 150), noidung: clip(d.noidung, 3000),
+    diadiem: clip(d.diadiem, 150), noidung: clip(d.noidung, 3000), lang: d.lang === "en" ? "en" : "vi",
   };
   if (!lead.nhom.length || !lead.ten || !/^[0-9+().\s-]{8,20}$/.test(lead.sdt)) return json({ ok: false, error: "invalid" }, 400);
 
@@ -132,7 +132,7 @@ async function sendMail(env, r) {
     "", "Nội dung:", r.noidung || "(không có)",
   ].filter((x) => x !== false && x !== undefined && x !== "").join("\r\n");
   const b64 = (s) => btoa(String.fromCharCode(...new TextEncoder().encode(s)));
-  const subject = `=?UTF-8?B?${b64(`[Website] Yêu cầu tư vấn – ${r.ten} – ${r.nhom.join(", ")}`.slice(0, 180))}?=`;
+  const subject = `=?UTF-8?B?${b64(`[Website${r.lang === "en" ? " EN" : ""}] Yêu cầu tư vấn – ${r.ten} – ${r.nhom.join(", ")}`.slice(0, 180))}?=`;
   const body = b64(lines).replace(/.{1,76}/g, "$&\r\n");
   const raw = [
     `From: Website Core Material <${env.MAIL_FROM}>`, `To: <${env.MAIL_TO}>`,

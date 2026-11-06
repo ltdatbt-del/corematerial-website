@@ -4,9 +4,12 @@ Kết quả: /home/claude/pv/index.html + img/, media/ (đường dẫn tương 
 import re, glob, os, shutil
 
 ROOT = os.path.join(os.path.dirname(__file__), '..', 'public')
-OUT = '/home/claude/pv'
-PAGES = ['', 'gioi-thieu', 'vat-lieu', 'may-moc', 'may-moc/phun-grc', 'may-moc/phun-vua-to-tuong',
-         'may-moc/robot-xep-pallet', 'ung-dung', 'lien-he', 'hop-tac-dau-tu']
+EN = os.environ.get('LANG_PV') == 'en'
+OUT = '/home/claude/pv_en' if EN else '/home/claude/pv'
+PAGES = (['en', 'en/about', 'en/materials', 'en/equipment', 'en/equipment/grc-spraying', 'en/equipment/wall-plastering-machine',
+          'en/equipment/palletizing-robot', 'en/applications', 'en/contact', 'en/investment'] if EN else
+         ['', 'gioi-thieu', 'vat-lieu', 'may-moc', 'may-moc/phun-grc', 'may-moc/phun-vua-to-tuong',
+         'may-moc/robot-xep-pallet', 'ung-dung', 'lien-he', 'hop-tac-dau-tu'])
 
 
 def key(p):
@@ -16,7 +19,7 @@ def key(p):
 def fix_links(h):
     # liên hệ có chọn sẵn nhóm
     from urllib.parse import unquote_plus
-    h = re.sub(r'href="/lien-he/\?nhom=([^"#]+)(?:#form)?"', lambda m: 'href="#form" data-nhom="%s"' % unquote_plus(m.group(1)), h)
+    h = re.sub(r'href="/(?:en/contact|lien-he)/\?nhom=([^"#]+)(?:#form)?"', lambda m: 'href="#form" data-nhom="%s"' % unquote_plus(m.group(1)), h)
     def repl(m):
         path, frag = m.group(1).strip('/'), m.group(2)
         if path in PAGES:
@@ -27,7 +30,7 @@ def fix_links(h):
     return h
 
 
-idx = open(os.path.join(ROOT, 'index.html'), encoding='utf-8').read()
+idx = open(os.path.join(ROOT, PAGES[0], 'index.html'), encoding='utf-8').read()
 sections, scripts, titles = [], [], {}
 for p in PAGES:
     s = open(os.path.join(ROOT, p, 'index.html'), encoding='utf-8').read()
@@ -35,7 +38,7 @@ for p in PAGES:
     main = re.search(r'<main>(.*)</main>', s, re.S).group(1)
     sections.append('<section class="pv-page" data-page="%s" hidden>%s</section>' % (key(p), main))
     for sc in re.findall(r'<script(?![^>]*ld\+json)(?![^>]*src=)[^>]*>.*?</script>', s, re.S):
-        if p == 'lien-he' and sc not in scripts:
+        if p in ('lien-he', 'en/contact') and sc not in scripts:
             scripts.append(sc.replace("new URLSearchParams(location.search).get('nhom')", "null")
                              .replace("fetch('/api/lien-he'", "fetch('https://www.corematerial.vn/api/lien-he'"))
 
@@ -43,8 +46,8 @@ css = open(os.path.join(ROOT, 'assets', 'site.css'), encoding='utf-8').read()
 body = idx.replace(re.search(r'<main>.*</main>', idx, re.S).group(0), '<main>%s</main>' % ''.join(sections))
 body = re.sub(r'<link rel="stylesheet" href="/assets/site.css"[^>]*>', '<style>%s</style>' % css, body)
 body = re.sub(r'<script[^>]*challenges\.cloudflare[^>]*></script>', '', body)
-banner = ('<div style="background:#D4A835;color:#111;font:600 13px/1.4 Inter,sans-serif;padding:8px 16px;text-align:center">'
-          'BẢN XEM TRƯỚC — chưa xuất bản. Khung vàng sọc = vị trí chờ nội dung thật. Form ở bản này không gửi được (môi trường xem trước).</div>')
+banner = ('<div style="background:#D4A835;color:#111;font:600 13px/1.4 Inter,sans-serif;padding:8px 16px;text-align:center">' +
+          ('PREVIEW — English version, not yet published. The form cannot send from this preview.' if EN else 'BẢN XEM TRƯỚC — chưa xuất bản. Khung vàng sọc = vị trí chờ nội dung thật. Form ở bản này không gửi được (môi trường xem trước).') + '</div>')
 body = body.replace('<header class="site">', banner + '<header class="site">', 1)
 router = '''<script>
 (function(){

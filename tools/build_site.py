@@ -6,6 +6,9 @@
 import os, sys, html, json
 sys.path.insert(0, os.path.dirname(__file__))
 from site_data import *
+from site_data_en import PATHS as _EN_PATHS
+LANG, ALT_LANG, ALT_LABEL = "vi", "en", "EN"
+ALT_MAP = _EN_PATHS
 
 PREVIEW = os.environ.get("PREVIEW") == "1"
 ROOT = os.path.join(os.path.dirname(__file__), "..", "public")
@@ -34,13 +37,17 @@ def page(path, title, desc, body, active=None, og_img="/img/og-image.jpg", extra
            "url":SITE,"logo":SITE+"/img/core-mark.svg","slogan":COMPANY["slogan"],"taxID":COMPANY["tax"],"telephone":TEL,"email":COMPANY["email"],
            "address":{"@type":"PostalAddress","streetAddress":"114bis Trần Quốc Toản, P. Xuân Hòa","addressLocality":"TP. Hồ Chí Minh","addressCountry":"VN"}}
     robots = '<meta name="robots" content="noindex, nofollow">' if PREVIEW else ""
+    alt = ALT_MAP.get(path)
+    hl = (f'\n<link rel="alternate" hreflang="{LANG}" href="{canon}"><link rel="alternate" hreflang="{ALT_LANG}" href="{SITE}{alt}">'
+          + (f'<link rel="alternate" hreflang="x-default" href="{SITE}{path if LANG=="vi" else alt}">')) if alt else ""
+    sw = f'<a class="lang" href="{alt}" hreflang="{ALT_LANG}" lang="{ALT_LANG}">{ALT_LABEL}</a>' if alt else ""
     return f'''<!DOCTYPE html>
-<html lang="vi"><head>
+<html lang="{LANG}"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{e(title)}</title>
 <meta name="description" content="{e(desc)}">{robots}
-<link rel="canonical" href="{canon}">
-<meta property="og:type" content="website"><meta property="og:site_name" content="Core Material JSC"><meta property="og:locale" content="vi_VN">
+<link rel="canonical" href="{canon}">{hl}
+<meta property="og:type" content="website"><meta property="og:site_name" content="Core Material JSC"><meta property="og:locale" content="{"vi_VN" if LANG=="vi" else "en_US"}">
 <meta property="og:title" content="{e(title)}"><meta property="og:description" content="{e(desc)}"><meta property="og:url" content="{canon}">
 <meta property="og:image" content="{SITE}{og_img}"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
@@ -53,7 +60,7 @@ def page(path, title, desc, body, active=None, og_img="/img/og-image.jpg", extra
 {MARK_SYMBOL}
 <header class="site"><div class="wrap nav">
   <a href="/" class="logo" aria-label="Core Material JSC – Trang chủ"><svg class="mk"><use href="#cm"/></svg><span class="wm"><b>Core Material <span>JSC.</span></b><small>Building Values, Enriching Life</small></span></a>
-  <nav class="menu" id="menu">{nav}</nav>
+  <nav class="menu" id="menu">{nav}</nav>{sw}
   <a href="/lien-he/" class="btn btn-dark">Liên hệ tư vấn</a>
   <button class="burger" aria-label="Mở menu" aria-controls="menu" onclick="document.getElementById('menu').classList.toggle('open')"><span></span><span></span><span></span></button>
 </div></header>
@@ -360,7 +367,7 @@ nf = '<section class="phead" style="padding:120px 0"><div class="wrap"><span cla
 write("/404.html", page("/404.html", "Không tìm thấy trang | Core Material JSC", DEFAULT_DESC, nf))
 
 # =================== sitemap/robots ===================
-urls = ["/", "/gioi-thieu/", "/vat-lieu/", "/may-moc/"] + [f"/may-moc/{q['id']}/" for q in EQUIPMENT] + ["/ung-dung/", "/lien-he/", "/hop-tac-dau-tu/"]
+urls = list(_EN_PATHS.values()) + ["/", "/gioi-thieu/", "/vat-lieu/", "/may-moc/"] + [f"/may-moc/{q['id']}/" for q in EQUIPMENT] + ["/ung-dung/", "/lien-he/", "/hop-tac-dau-tu/"]
 open(os.path.join(ROOT, "sitemap.xml"), "w").write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' + "".join(f"<url><loc>{SITE}{u}</loc></url>\n" for u in urls) + "</urlset>\n")
 open(os.path.join(ROOT, "robots.txt"), "w").write(("User-agent: *\nDisallow: /\n" if PREVIEW else f"User-agent: *\nAllow: /\nDisallow: /email/\nSitemap: {SITE}/sitemap.xml\n"))
 print("Built", "PREVIEW" if PREVIEW else "PRODUCTION", len(urls), "pages")
