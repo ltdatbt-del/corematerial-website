@@ -188,7 +188,6 @@ about = phead([("/", "Trang chủ"), (None, "Giới thiệu")], "Về Core Mater
 <section><div class="wrap">
  <span class="tag">Giá trị cốt lõi</span><h2>INTEGRITY · INNOVATION · PARTNERSHIP</h2>
  <div class="cv-grid">{"".join(f'<div class="cv-item"><span class="en">{a}</span><h3>{e(b)}</h3><p>{e(c)}</p></div>' for a,b,c in VALUES)}</div>
- <div class="note" style="margin-top:28px">Giá trị cốt lõi thể hiện cách Core Material làm việc. Mỗi nhóm sản phẩm có bộ cam kết riêng — ví dụ cát khô: <b>CLEAN · CONSISTENT · RELIABLE</b>; xi măng trắng: <b>WHITENESS · CONSISTENCY · STRENGTH</b>.</div>
 </div></section>
 <section class="alt"><div class="wrap"><span class="tag">Đồng hành cùng khách hàng</span><h2>Quy trình tư vấn và triển khai</h2>{steps()}</div></section>
 <section><div class="wrap" style="max-width:900px"><span class="tag">Thông tin doanh nghiệp</span><h2>Pháp nhân</h2>
