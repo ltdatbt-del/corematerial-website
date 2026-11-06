@@ -37,7 +37,7 @@ def foot(rel):
 <div><a class="brand" href="{rel}index.html">{MARK.format(c="#fff")}<span><b>Core Material</b><small>INSIGHTS</small></span></a>
 <p style="margin-top:14px;max-width:380px">Kênh chia sẻ kiến thức về vật liệu xây dựng, hóa chất chuyên dụng, máy móc và khoa học công nghệ – do Core Material JSC biên soạn.</p></div>
 <div><h4>Chuyên mục</h4><ul>{''.join(f'<li><a href="{rel}chuyen-muc/{k}.html">{e(v[0])}</a></li>' for k,v in CATEGORIES.items())}</ul></div>
-<div><h4>Core Material JSC</h4><ul><li><a href="https://www.corematerial.vn">www.corematerial.vn</a></li><li><a href="https://www.corematerial.vn/#san-pham">Sản phẩm</a></li><li><a href="https://www.corematerial.vn/#lien-he">Liên hệ báo giá</a></li><li>Hotline 0938.903.557</li></ul></div>
+<div><h4>Core Material JSC</h4><ul><li><a href="https://www.corematerial.vn">www.corematerial.vn</a></li><li><a href="https://www.corematerial.vn/vat-lieu/">Sản phẩm</a></li><li><a href="https://www.corematerial.vn/lien-he/">Liên hệ báo giá</a></li><li>Hotline 0938.903.557</li></ul></div>
 </div><div class="fbot"><span>© 2026 Công ty Cổ phần Khoa học Công nghệ Core Material. Nội dung mang tính tham khảo kỹ thuật.</span><span>INTEGRITY · INNOVATION · PARTNERSHIP</span></div></div></footer>
 </body></html>'''
 
@@ -116,7 +116,7 @@ page = head("Core Material Insights — Tri thức vật liệu xây dựng, má
 <section style="padding-top:20px"><div class="wrap"><div class="sec-h"><h2>Chuyên mục</h2><p>Từ đặc tính vật liệu đến dây chuyền sản xuất và chính sách ngành.</p></div><div class="catgrid">{cats_html}</div></div></section>
 <section><div class="wrap"><div class="sec-h"><h2>Tất cả bài viết</h2><p>Được biên soạn bởi đội ngũ kỹ thuật Core Material, có trích dẫn nguồn khi sử dụng số liệu nghiên cứu.</p></div><div class="grid3">{"".join(card(a, rel) for a in ARTICLES)}</div></div></section>
 <section id="thu-vien"><div class="wrap"><div class="sec-h"><h2>Thư viện vật liệu</h2><p>Giải thích ngắn gọn các vật liệu và phụ gia thường gặp trong vữa khô, keo dán gạch và vật liệu trang trí.</p></div><div class="lib">{lib_html}</div></div></section>
-<section><div class="wrap"><div class="cta"><div><h2>Cần tư vấn vật liệu cho dự án hoặc nhà máy?</h2><p>Đội ngũ kỹ thuật Core Material hỗ trợ chọn vật liệu, thử nghiệm cấp phối và báo giá.</p></div><a class="btn" href="https://www.corematerial.vn/#lien-he">Liên hệ Core Material →</a></div></div></section>
+<section><div class="wrap"><div class="cta"><div><h2>Cần tư vấn vật liệu cho dự án hoặc nhà máy?</h2><p>Đội ngũ kỹ thuật Core Material hỗ trợ chọn vật liệu, thử nghiệm cấp phối và báo giá.</p></div><a class="btn" href="https://www.corematerial.vn/lien-he/">Liên hệ Core Material →</a></div></div></section>
 ''' + foot(rel)
 write("index.html", page)
 

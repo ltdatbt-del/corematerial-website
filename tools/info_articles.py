@@ -4,6 +4,7 @@ Thêm bài mới: thêm một dict vào ARTICLES rồi chạy  python3 tools/bui
 """
 
 CATEGORIES = {
+    "grc":        ("GRC / GFRC",           "Vật liệu, cấp phối, thiết bị phun và kỹ thuật sản xuất cấu kiện bê tông cốt sợi thủy tinh."),
     "vat-lieu":   ("Vật liệu",             "Đặc tính, tiêu chuẩn và cách chọn vật liệu nền cho vữa khô, keo dán gạch, terrazzo."),
     "nghien-cuu": ("Nghiên cứu & Xu hướng", "Những hướng nghiên cứu mới về vật liệu xây dựng carbon thấp và kinh tế tuần hoàn."),
     "may-moc":    ("Máy móc & Công nghệ",  "Nguyên lý, vận hành và lựa chọn thiết bị sản xuất vật liệu."),
@@ -11,6 +12,200 @@ CATEGORIES = {
 }
 
 ARTICLES = [
+# ---------------------------------------------------------------- GRC-1
+{
+"slug": "san-xuat-grc-bang-may-phun-quy-trinh-7-buoc",
+"cat": "grc",
+"date": "06/11/2026",
+"read": 9,
+"img": "grc-may-phun.jpg",
+"title": "Sản xuất GRC bằng máy phun: quy trình 7 bước từ cấp phối đến tháo khuôn",
+"excerpt": "Phun máy cho tấm GRC mỏng, nhẹ mà vẫn đạt cường độ uốn cao – nhưng chỉ khi từng bước được làm đúng: cấp phối, hiệu chỉnh tỷ lệ sợi, độ dày từng lớp phun, lèn và bảo dưỡng. Đây là quy trình chuẩn kèm các con số cần nhớ.",
+"body": """
+<p>GRC (Glass-fibre Reinforced Concrete), còn gọi là GFRC, là vữa xi măng – cát mịn được gia cường bằng <b>sợi thủy tinh kháng kiềm (AR)</b>. Nhờ sợi, một tấm GRC dày chỉ khoảng 10–15 mm vẫn chịu uốn tốt, nên được dùng nhiều cho tấm ốp mặt dựng, phào chỉ, cột, lam, chậu cây và các cấu kiện kiến trúc có hình dáng phức tạp.</p>
+<p>Có hai cách sản xuất chính: <b>đổ khuôn hỗn hợp trộn sẵn sợi (premix)</b> và <b>phun máy (spray-up)</b>. Phương pháp phun đưa vữa và sợi cắt ngắn lên khuôn cùng lúc, cho hàm lượng sợi cao hơn và sợi phân bố theo mặt phẳng tấm – vì vậy cường độ uốn thường cao hơn rõ rệt. Bài này đi qua quy trình phun máy theo đúng thứ tự một xưởng cần làm.</p>
+
+<h2>Thiết bị và dụng cụ cần chuẩn bị</h2>
+<ul>
+<li><b>Máy phun GRC:</b> gồm phễu chứa vữa, bơm trục vít, tủ điện, tay cần và súng phun có bộ cắt sợi. Súng phun quyết định phần lớn chất lượng sản phẩm.</li>
+<li><b>Máy trộn tốc độ cao:</b> vữa GRC thường dùng xi măng đông kết nhanh, cần trộn đồng nhất trong khoảng 30–60 giây.</li>
+<li><b>Máy nén khí:</b> cấp khí cho súng phun, mô-tơ cắt sợi và bộ rung phễu – lưu lượng phải đủ theo khuyến cáo của nhà sản xuất máy.</li>
+<li><b>Hai cân:</b> loại 50 kg (sai số khoảng ±50 g) để cân vữa, loại 500 g (sai số ±1 g) để thử tỷ lệ sợi.</li>
+<li><b>Con lăn lò xo các cỡ và bay:</b> GRC không đầm rung được, việc lèn chặt hoàn toàn bằng con lăn.</li>
+</ul>
+
+<h2>Bước 1 – Thiết kế cấp phối</h2>
+<p>Cấp phối được chọn theo cường độ uốn yêu cầu của sản phẩm. Bảng dưới là một cấp phối tham chiếu phổ biến (tính theo khối lượng, xi măng = 100 phần):</p>
+<table>
+<tr><th>Thành phần</th><th>Tỷ lệ (phần khối lượng)</th></tr>
+<tr><td>Xi măng</td><td>100</td></tr>
+<tr><td>Cát thạch anh (cát mịn, sạch, khô)</td><td>100 – 120</td></tr>
+<tr><td>Nhũ tương acrylic (dạng lỏng đậm đặc)</td><td>8 – 12</td></tr>
+<tr><td>Phụ gia giảm nước gốc polycarboxylate</td><td>0,6 – 1,2</td></tr>
+<tr><td>Nước trộn</td><td>18 – 24</td></tr>
+<tr><td>Sợi thủy tinh kháng kiềm (ZrO₂ &gt; 16%, dài 12 – 18 mm)</td><td>4 – 5% khối lượng sản phẩm</td></tr>
+</table>
+<div class="note"><b>Lưu ý:</b> đây là cấp phối khởi điểm để thử. Mỗi loại xi măng, cát và phụ gia cho kết quả khác nhau – cần đúc mẫu và thử uốn trước khi sản xuất hàng loạt.</div>
+
+<h2>Bước 2 – Chuẩn bị khuôn</h2>
+<p>Khuôn có thể làm bằng gỗ, thép, GRC, composite FRP hoặc silicone. Yêu cầu chung: kích thước chính xác, đủ cứng để không biến dạng khi lăn lèn. Bề mặt khuôn phải sạch, phủ chất chống dính đều tay; kiểm tra lại vị trí các chi tiết chôn sẵn (bản mã, neo liên kết) trước khi phun.</p>
+
+<h2>Bước 3 – Kiểm tra thiết bị trước ca</h2>
+<ul>
+<li>Kiểm tra lưỡi cắt sợi trong súng: khe hở giữa lưỡi và vành cắt khoảng <b>1,0 – 1,1 mm</b>. Lắp sai gây gãy lưỡi và phải dừng sản xuất.</li>
+<li>Kiểm tra áp suất máy nén khí theo khuyến cáo của nhà sản xuất máy phun.</li>
+<li>Chuẩn bị sẵn phụ tùng hao mòn (lưỡi cắt, con lăn cao su, đầu phun) và dụng cụ thử nghiệm tại chỗ.</li>
+<li><b>Không chạy bơm trục vít khô:</b> trước khi khởi động, đổ một ít nước hoặc chất lỏng loãng vào phễu để bôi trơn stator cao su. Chạy khô vài giây cũng có thể làm cháy stator.</li>
+</ul>
+
+<h2>Bước 4 – Cân và trộn vữa</h2>
+<p>Cát hiếm khi khô tuyệt đối. Nếu không trừ lượng nước có sẵn trong cát, tỷ lệ nước/xi măng thực tế sẽ cao hơn thiết kế – vữa loãng hơn, cường độ thấp hơn và dễ co ngót, nứt. Hãy đo độ ẩm cát trước mỗi mẻ rồi hiệu chỉnh:</p>
+<ul>
+<li>Khối lượng cát ẩm cần cân: <b>X = Xs ÷ (1 − A%)</b></li>
+<li>Lượng nước thực tế cần thêm: <b>W = Ws − X × A%</b></li>
+</ul>
+<p>Trong đó Xs là khối lượng cát khô theo cấp phối, A% là độ ẩm cát, Ws là lượng nước theo cấp phối. Ví dụ: cấp phối cần 100 kg cát khô và 22 kg nước, cát đang ẩm 2% → cân X ≈ 102,0 kg cát ẩm và chỉ thêm W ≈ 22 − 2,04 ≈ 20,0 kg nước.</p>
+<p>Dùng <b>cát khô công nghiệp</b> (độ ẩm dưới 0,5%) giúp bước này đơn giản và ổn định hơn rất nhiều. Trộn đúng thứ tự cho vật liệu vào để vữa đồng nhất, không vón cục; sàng vữa trước khi đổ vào phễu máy.</p>
+
+<h2>Bước 5 – Hiệu chỉnh máy: thử túi và thử xô</h2>
+<p>Đây là bước quyết định hàm lượng sợi – yếu tố số một của cường độ GRC phun. Mục tiêu thường là <b>4 – 5% sợi theo khối lượng</b> sản phẩm.</p>
+<p><b>Thử túi (lưu lượng sợi):</b></p>
+<ol>
+<li>Cân túi rỗng (W, gam).</li>
+<li>Phun sợi đã cắt vào túi trong đúng 15 giây.</li>
+<li>Cân túi có sợi (G, gam).</li>
+<li>Lưu lượng sợi = (G − W) × 4, đơn vị gam/phút. Điều chỉnh áp suất khí của mô-tơ cắt sợi cho đến khi đạt giá trị mục tiêu.</li>
+</ol>
+<p><b>Thử xô (lưu lượng vữa):</b></p>
+<ol>
+<li>Cân xô rỗng (W, kg).</li>
+<li>Phun vữa vào xô trong đúng 30 giây.</li>
+<li>Cân xô có vữa (S, kg).</li>
+<li>Lưu lượng vữa = (S − W) × 2, đơn vị kg/phút. Điều chỉnh tốc độ bơm cho đến khi đạt mục tiêu.</li>
+</ol>
+<p>Quan hệ giữa hai lưu lượng: <b>vữa = sợi × (1 − a) ÷ a</b>, với a là tỷ lệ sợi mục tiêu. Ví dụ: muốn a = 5% và máy đang cắt 300 g sợi/phút → lưu lượng vữa cần là 300 × 0,95 ÷ 0,05 = 5.700 g, tức khoảng <b>5,7 kg vữa/phút</b>.</p>
+<div class="note"><b>Thực hành tốt:</b> thử túi và thử xô ở đầu mỗi ca, sau mỗi lần thay lưỡi cắt hoặc con lăn, và ghi vào sổ sản xuất. Đây cũng là bằng chứng chất lượng khi khách hàng hoặc tư vấn giám sát yêu cầu.</div>
+
+<h2>Bước 6 – Phun và lèn</h2>
+<ol>
+<li><b>Lớp mặt (không sợi):</b> phun một lớp vữa mỏng không có sợi để sợi không lộ ra bề mặt – khoảng <b>1 mm</b> với vữa thường, <b>2 mm</b> với vữa màu. Lớp này dày hơn mức đó rất dễ nứt chân chim.</li>
+<li><b>Các lớp có sợi:</b> mỗi lớp dày <b>3 – 4 mm</b>, lăn lèn ngay sau khi phun để đuổi bọt khí và ép sợi vào vữa.</li>
+<li><b>Đường phun:</b> phun theo hình chữ S so le, hai dải phun liền kề chồng lên nhau 50% bề rộng dải.</li>
+<li><b>Tư thế súng:</b> đầu súng vuông góc với mặt khuôn, cách khoảng <b>300 – 400 mm</b>. Phun góc và cạnh trước, mặt phẳng lớn sau; phun phần thấp trước, phần cao sau.</li>
+<li><b>Góc cạnh:</b> góc trong không dùng con lăn mà dùng thép góc hoặc cọ để ép; góc ngoài không có thành khuôn thì giữ vữa bằng bay rồi mới lăn. Khi lăn sát thành khuôn, chừa khe nhỏ để không kéo xô lớp vữa đã phun.</li>
+</ol>
+
+<h2>Bước 7 – Tháo khuôn và bảo dưỡng</h2>
+<ul>
+<li>Phủ ngay màng nilon lên cấu kiện vừa phun để nước không bốc hơi nhanh – đây là lúc GRC dễ nứt nhất.</li>
+<li>Chỉ tháo khuôn khi cường độ uốn đạt khoảng <b>2 MPa</b> trở lên (đúc mẫu đi kèm để kiểm tra).</li>
+<li>Sau tháo khuôn, tiếp tục bảo dưỡng ẩm liên tục khoảng <b>7 ngày</b> trong môi trường độ ẩm tương đối từ 95% trở lên.</li>
+</ul>
+
+<h2>Sau ca làm việc: vệ sinh máy</h2>
+<p>Ngừng cấp vữa, phun hết vữa còn trong ống, sau đó cấp nước sạch và tiếp tục phun để súc rửa bơm và ống dẫn. Vệ sinh kỹ súng phun, đáy phễu và các khớp nối nhanh. Vữa đông kết nhanh bám lại trong bơm là nguyên nhân hàng đầu làm giảm tuổi thọ stator/rotor và gây tắc ống ở ca sau.</p>
+
+<h2>Tóm tắt các con số cần nhớ</h2>
+<table>
+<tr><th>Hạng mục</th><th>Giá trị tham chiếu</th></tr>
+<tr><td>Hàm lượng sợi AR</td><td>4 – 5% khối lượng</td></tr>
+<tr><td>Chiều dài sợi cắt</td><td>12 – 18 mm (thường dùng)</td></tr>
+<tr><td>Lớp mặt không sợi</td><td>1 mm (vữa thường) / 2 mm (vữa màu)</td></tr>
+<tr><td>Mỗi lớp phun có sợi</td><td>3 – 4 mm, lăn lèn ngay</td></tr>
+<tr><td>Khoảng cách súng – khuôn</td><td>300 – 400 mm, vuông góc</td></tr>
+<tr><td>Chồng dải phun</td><td>50%</td></tr>
+<tr><td>Tháo khuôn</td><td>khi cường độ uốn ≥ 2 MPa</td></tr>
+<tr><td>Bảo dưỡng ẩm</td><td>7 ngày, độ ẩm ≥ 95%</td></tr>
+</table>
+
+<div class="note"><b>Góc nhìn Core Material:</b> Core Material cung cấp thiết bị phun GRC/GFRC trọn bộ (máy phun trục vít, máy trộn tốc độ cao 200 L, súng phun có bộ cắt sợi) cùng cát khô và sợi thủy tinh kháng kiềm. Xem thông số máy tại <a href="https://www.corematerial.vn/may-moc/phun-grc/">trang thiết bị phun GRC</a> hoặc <a href="https://www.corematerial.vn/lien-he/">liên hệ</a> để được tư vấn cấu hình cho xưởng của bạn.</div>
+""",
+"sources": [
+    ("Tài liệu hướng dẫn vận hành máy phun GRC trục vít và quy trình sản xuất GRC của nhà sản xuất thiết bị (2026)", None),
+    ("PCI MNL-130 – Manual for Quality Control for Plants and Production of Glass Fiber Reinforced Concrete Products", None),
+    ("EN 1169 – Precast concrete products: General rules for factory production control of glass-fibre reinforced cement", None),
+    ("JC/T 940 – Sản phẩm trang trí GRC (tiêu chuẩn ngành vật liệu xây dựng Trung Quốc)", None),
+],
+},
+# ---------------------------------------------------------------- GRC-2
+{
+"slug": "vi-sao-tam-grc-bi-nut-va-cach-phong-tranh",
+"cat": "grc",
+"date": "06/11/2026",
+"read": 8,
+"img": None,
+"title": "Vì sao tấm GRC bị nứt? 8 nguyên nhân thường gặp và cách phòng tránh",
+"excerpt": "Nứt là lỗi gây thiệt hại lớn nhất trong sản xuất GRC: hàng phải hủy, giao trễ, mất uy tín với chủ đầu tư. Phần lớn vết nứt có thể truy ra từ một vài khâu cụ thể – và đều phòng được.",
+"body": """
+<p>Với xưởng GRC, một tấm bị nứt không chỉ mất tiền vật liệu: còn là công khuôn, công phun, tiến độ giao hàng và uy tín với nhà thầu. Tin tốt là phần lớn vết nứt không đến từ "xui", mà có thể truy ra từ một vài khâu cụ thể trong quy trình. Dưới đây là 8 nguyên nhân thường gặp nhất và cách phòng tránh từng nguyên nhân.</p>
+
+<h2>Đọc vết nứt trước khi tìm nguyên nhân</h2>
+<p>Hình dạng và thời điểm xuất hiện vết nứt cho biết nên kiểm tra khâu nào trước:</p>
+<table>
+<tr><th>Dạng nứt</th><th>Thời điểm thường gặp</th><th>Nghi ngờ trước tiên</th></tr>
+<tr><td>Nứt chân chim, mạng nhện trên bề mặt</td><td>Vài giờ đến vài ngày sau phun</td><td>Lớp mặt quá dày, mất nước sớm, thừa nước trộn</td></tr>
+<tr><td>Nứt ở góc, cạnh, chỗ thay đổi tiết diện</td><td>Khi tháo khuôn hoặc vận chuyển</td><td>Tháo khuôn sớm, lèn góc không kỹ, thiếu sợi ở góc</td></tr>
+<tr><td>Nứt dài, xuyên chiều dày</td><td>Sau lắp đặt, theo mùa nắng – mưa</td><td>Liên kết quá cứng, không cho tấm co giãn</td></tr>
+<tr><td>Tấm giòn dần, nứt khi chịu tải sau vài năm</td><td>Nhiều năm sau</td><td>Sợi không kháng kiềm, hàm lượng sợi thấp</td></tr>
+</table>
+
+<h2>1. Lớp mặt quá dày</h2>
+<p>Lớp vữa mặt không có sợi chỉ để che sợi và tạo bề mặt đẹp – nên giữ khoảng <b>1 mm</b> với vữa thường và <b>2 mm</b> với vữa màu. Lớp này dày hơn thì không có sợi đỡ, co ngót tự do và nứt chân chim. Đây là nguyên nhân rất phổ biến ở các xưởng mới chuyển từ trát tay sang phun.</p>
+
+<h2>2. Mất nước quá sớm, bảo dưỡng không đủ</h2>
+<p>GRC mỏng, giàu xi măng (tỷ lệ xi măng : cát gần 1 : 1) nên co ngót khô lớn hơn bê tông thông thường. Nếu bề mặt bị gió, nắng hút nước trong vài giờ đầu, vết nứt xuất hiện gần như chắc chắn.</p>
+<ul>
+<li>Phủ nilon ngay sau khi phun xong, không để cấu kiện trần trong xưởng thông gió mạnh.</li>
+<li>Bảo dưỡng ẩm liên tục khoảng <b>7 ngày</b> ở độ ẩm tương đối từ 95% trở lên sau tháo khuôn.</li>
+<li>Polymer acrylic trong cấp phối giúp giữ nước và giảm nứt, nhưng không thay thế hoàn toàn việc bảo dưỡng nếu chưa có thí nghiệm chứng minh.</li>
+</ul>
+
+<h2>3. Thừa nước trộn – thường do không trừ nước trong cát</h2>
+<p>Thêm nước cho dễ phun là thói quen nguy hiểm: tỷ lệ nước/xi măng tăng làm cường độ giảm và co ngót tăng. Một nguyên nhân "vô hình" là <b>cát ẩm</b>: cát ẩm 3% nghĩa là cứ 100 kg cát đã mang theo khoảng 3 kg nước chưa được tính. Hãy đo độ ẩm cát và trừ nước tương ứng mỗi mẻ, hoặc dùng cát khô công nghiệp có độ ẩm dưới 0,5% để loại bỏ biến số này. Phụ gia giảm nước giúp vữa đủ dẻo để phun mà không cần thêm nước.</p>
+
+<h2>4. Hàm lượng sợi thấp hoặc không đều</h2>
+<p>Sợi là "cơ bắp" của GRC. Với GRC phun, hàm lượng mục tiêu thường là <b>4 – 5% khối lượng</b>. Lưỡi cắt mòn, con lăn cao su mòn hoặc áp suất khí thay đổi đều làm lượng sợi giảm mà mắt thường khó thấy.</p>
+<ul>
+<li>Thử túi (lưu lượng sợi) và thử xô (lưu lượng vữa) đầu mỗi ca và sau mỗi lần thay phụ tùng.</li>
+<li>Sợi ra dài bất thường, cắt không đứt hoặc rơi rụng: kiểm tra lưỡi cắt và khe hở con lăn.</li>
+<li>Phun góc, cạnh trước và đủ dày – đây là nơi thường thiếu sợi nhất.</li>
+</ul>
+
+<h2>5. Lèn không kỹ</h2>
+<p>GRC không đầm rung được, chỉ lèn bằng con lăn. Mỗi lớp phun có sợi nên dày <b>3 – 4 mm</b> và lăn ngay. Phun một lớp quá dày rồi mới lăn sẽ để lại bọt khí và vùng sợi không thấm vữa – điểm yếu khởi phát nứt và tách lớp. Góc trong nên ép bằng thép góc hoặc cọ thay vì con lăn.</p>
+
+<h2>6. Tháo khuôn quá sớm hoặc thao tác mạnh tay</h2>
+<p>Áp lực tiến độ khiến nhiều xưởng tháo khuôn khi tấm "trông đã cứng". Nên chờ cường độ uốn đạt khoảng <b>2 MPa</b> trở lên, kiểm tra bằng mẫu đúc kèm. Khi nâng, lật tấm lớn, dùng điểm nâng và giá đỡ phù hợp để tránh uốn cục bộ ở tuổi sớm.</p>
+
+<h2>7. Dùng sợi không kháng kiềm</h2>
+<p>Môi trường xi măng có tính kiềm cao. Sợi thủy tinh thông thường (E-glass) bị kiềm ăn mòn dần, tấm mất độ dẻo dai và nứt sau một thời gian sử dụng – lỗi xuất hiện khi công trình đã bàn giao, rất khó xử lý. Chỉ dùng <b>sợi thủy tinh kháng kiềm (AR)</b> có hàm lượng ZrO₂ từ khoảng 16% trở lên, và yêu cầu nhà cung cấp phiếu thử nghiệm theo EN 15422 cho từng lô.</p>
+
+<h2>8. Liên kết quá cứng – nứt sau khi lắp đặt</h2>
+<p>Tấm GRC co giãn theo nhiệt độ và độ ẩm. Nếu tấm bị ngàm cứng ở tất cả các điểm, ứng suất tích tụ qua các chu kỳ nắng – mưa sẽ gây nứt dài, thường xuất phát từ vị trí bản mã. Hệ liên kết cần có điểm chịu tải cố định và các điểm neo cho phép chuyển vị; thiết kế liên kết nên do kỹ sư kết cấu thực hiện, phối hợp với xưởng sản xuất.</p>
+
+<h2>Một lưu ý về vật liệu đầu vào</h2>
+<p>Xi măng hút ẩm khi lưu kho lâu, nhất là kho hở hoặc để ngoài trời; phụ gia polymer cũng có hạn dùng. Sau các đợt nghỉ dài ngày như Tết, khi vật liệu tồn kho lâu hơn bình thường, nên kiểm tra lại xi măng (vón cục, thời gian đông kết) và đúc mẫu thử trước khi chạy lại sản xuất hàng loạt.</p>
+
+<h2>Checklist chống nứt cho mỗi ca</h2>
+<ul>
+<li>☐ Đo độ ẩm cát, trừ nước theo cấp phối (hoặc dùng cát khô &lt; 0,5%).</li>
+<li>☐ Thử túi và thử xô, ghi tỷ lệ sợi vào sổ (mục tiêu 4 – 5%).</li>
+<li>☐ Lớp mặt 1 – 2 mm, không dày hơn.</li>
+<li>☐ Mỗi lớp có sợi 3 – 4 mm, lăn ngay; góc cạnh phun trước, đủ dày.</li>
+<li>☐ Phủ nilon ngay sau khi phun.</li>
+<li>☐ Tháo khuôn khi mẫu đạt ≥ 2 MPa; bảo dưỡng ẩm 7 ngày.</li>
+<li>☐ Kiểm tra phiếu thử nghiệm sợi AR và tình trạng xi măng khi nhập lô mới.</li>
+</ul>
+
+<div class="note"><b>Góc nhìn Core Material:</b> phần lớn nguyên nhân nứt nằm ở sự ổn định của vật liệu đầu vào và hiệu chỉnh máy. Core Material cung cấp cát khô kiểm soát độ ẩm và cấp phối, sợi thủy tinh kháng kiềm có phiếu thử nghiệm, cùng <a href="https://www.corematerial.vn/may-moc/phun-grc/">thiết bị phun GRC trọn bộ</a>. <a href="https://www.corematerial.vn/lien-he/">Liên hệ</a> để được tư vấn cho xưởng của bạn.</div>
+""",
+"sources": [
+    ("Tài liệu hướng dẫn quy trình sản xuất GRC phun của nhà sản xuất thiết bị (2026)", None),
+    ("PCI MNL-128 – Recommended Practice for Glass Fiber Reinforced Concrete Panels", None),
+    ("PCI MNL-130 – Manual for Quality Control for Plants and Production of Glass Fiber Reinforced Concrete Products", None),
+    ("EN 15422 – Precast concrete products: Specification of glassfibres for reinforcement of mortars and concretes", None),
+],
+},
 # ---------------------------------------------------------------- 1
 {
 "slug": "cat-kho-cong-nghiep-do-am-mo-dun-do-lon",
