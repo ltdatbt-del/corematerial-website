@@ -98,6 +98,15 @@ async function handleLead(request, env) {
     if (!v.success) return json({ ok: false, error: "captcha" }, 400);
   }
 
+  // Giới hạn 5 yêu cầu / giờ / IP
+  const ip = request.headers.get("CF-Connecting-IP") || "";
+  if (env.LEADS && ip) {
+    const k = `rl:${ip}`;
+    const n = Number(await env.LEADS.get(k).catch(() => 0)) || 0;
+    if (n >= 5) return json({ ok: false, error: "rate_limited" }, 429);
+    await env.LEADS.put(k, String(n + 1), { expirationTtl: 3600 }).catch(() => {});
+  }
+
   const now = new Date();
   const id = "CM" + now.toISOString().slice(2, 10).replace(/-/g, "") + "-" + crypto.randomUUID().slice(0, 6).toUpperCase();
   const record = { id, at: now.toISOString(), ip: request.headers.get("CF-Connecting-IP") || "", ua: clip(request.headers.get("user-agent"), 200), ...lead };

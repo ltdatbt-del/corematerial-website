@@ -1,2 +1,4 @@
 User-agent: *
-Disallow: /
+Allow: /
+Disallow: /email/
+Sitemap: https://www.corematerial.vn/sitemap.xml
