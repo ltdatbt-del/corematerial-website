@@ -127,6 +127,152 @@ ARTICLES = [
     ("JC/T 940 – Sản phẩm trang trí GRC (tiêu chuẩn ngành vật liệu xây dựng Trung Quốc)", None),
 ],
 },
+# ---------------------------------------------------------------- GRC-4
+{
+"slug": "truoc-khi-mua-may-phun-grc-10-cau-can-hoi",
+"cat": "grc",
+"date": "06/11/2026",
+"read": 8,
+"img": "grc-may-phun-2.jpg",
+"title": "Trước khi mua máy phun GRC: 10 câu cần hỏi nhà cung cấp",
+"excerpt": "Báo giá máy phun GRC thường chỉ có vài dòng thông số và một con số năng suất rất đẹp. Mười câu hỏi dưới đây giúp tránh những bất ngờ khi máy về: sai điện áp, thiếu máy nén khí, năng suất không như kỳ vọng, phụ tùng hao mòn nhanh.",
+"body": """
+<p>Một bộ máy phun GRC không đắt so với giá trị nó tạo ra, nhưng mua sai thì rất tốn: máy về không chạy được với điện xưởng, phải mua thêm thiết bị ngoài dự kiến, hay năng suất thực chỉ bằng một phần nhỏ con số trong báo giá. Dưới đây là 10 câu nên hỏi bằng văn bản trước khi đặt cọc – và cách đọc câu trả lời.</p>
+
+<h2>1. Máy được chế tạo cho điện áp và tần số nào?</h2>
+<p>Lưới điện công nghiệp tại Việt Nam là <b>3 pha 380 V / 50 Hz</b>. Báo giá từ nước ngoài đôi khi ghi điện áp khác (ví dụ 480 V / 60 Hz cho thị trường khác). Yêu cầu nhà cung cấp xác nhận điện áp cho <b>cả máy phun và máy trộn</b>, ghi rõ trong hóa đơn chiếu lệ (PI) và gửi ảnh nhãn động cơ.</p>
+
+<h2>2. Con số năng suất được tính trong điều kiện nào?</h2>
+<p>Báo giá thường ghi năng suất tính bằng m²/giờ. Hãy hỏi rõ con số đó là <b>thời gian phun thuần</b> (chưa tính cấp vữa, vệ sinh, dừng máy), ứng với <b>độ dày bao nhiêu</b> và tay nghề thợ ra sao. Cách tự kiểm tra nhanh là quy về lưu lượng vữa:</p>
+<div class="note"><b>Ví dụ tự kiểm tra:</b> máy bơm tối đa khoảng 1.600 kg vữa/giờ. Tấm GRC dày 12 mm, khối lượng thể tích khoảng 2,0 tấn/m³ → mỗi m² tấm hoàn chỉnh cần khoảng 24 kg vữa → năng suất tối đa theo lưu lượng bơm vào khoảng <b>65 m² tấm hoàn chỉnh/giờ phun thuần</b>. Con số hàng trăm m²/giờ thường là diện tích quét của một lượt phun mỏng. Năng suất thực trong ca còn thấp hơn do thời gian trộn, cấp vữa, đổi khuôn và vệ sinh.</div>
+
+<h2>3. Bộ máy gồm những gì – máy trộn có nằm trong giá không?</h2>
+<p>Hỏi danh sách đóng gói chi tiết: máy phun, tay cần, súng phun, ống khí, ống vữa (dài bao nhiêu mét), lưỡi cắt và con lăn dự phòng… Đặc biệt hỏi rõ <b>máy trộn tốc độ cao</b> có trong giá hay tính riêng – đây là thiết bị bắt buộc vì vữa GRC cần trộn đồng nhất trong 30 – 60 giây.</p>
+
+<h2>4. Súng phun có bộ cắt sợi không, dùng sợi loại nào?</h2>
+<ul>
+<li>Súng phun có tích hợp bộ cắt sợi hay phải mua riêng?</li>
+<li>Dùng sợi roving bao nhiêu tex (ví dụ 2.400 tex, 4.800 tex)?</li>
+<li>Tỷ lệ sợi / vữa điều chỉnh được trong khoảng nào (GRC phun thường cần 3 – 5%)?</li>
+<li>Chiều dài sợi cắt điều chỉnh thế nào (thường bằng số lượng và khoảng cách lưỡi dao trên con lăn)?</li>
+</ul>
+
+<h2>5. Cần máy nén khí công suất bao nhiêu – có kèm theo không?</h2>
+<p>Máy nén khí thường <b>không nằm trong bộ máy</b> nhưng lại bắt buộc để chạy súng phun, mô-tơ cắt sợi và bộ rung phễu. Hỏi lưu lượng (m³/phút) và áp suất yêu cầu, model khuyến nghị. Thiếu khí là nguyên nhân phổ biến khiến sợi cắt không đều và năng suất giảm. Đây là khoản đầu tư thêm cần đưa vào ngân sách ngay từ đầu.</p>
+
+<h2>6. Sợi thủy tinh kháng kiềm đi kèm có chứng nhận gì?</h2>
+<p>Nếu mua kèm sợi, hỏi trọng lượng cuộn, độ mảnh (tex), <b>hàm lượng ZrO₂</b> (nên từ khoảng 16% trở lên) và <b>phiếu thử nghiệm của phòng thí nghiệm độc lập</b> theo EN 15422. Sợi không kháng kiềm làm GRC giòn dần theo thời gian – lỗi chỉ lộ ra sau khi công trình đã bàn giao.</p>
+
+<h2>7. Bảo hành tính từ ngày nào, bao lâu, gồm những gì?</h2>
+<p>"Bảo hành 12 tháng" có thể tính từ ngày giao hàng, ngày nghiệm thu, hoặc – phổ biến với hàng nhập khẩu – từ <b>ngày xếp hàng lên tàu ghi trên vận đơn (B/L)</b>. Với thời gian vận chuyển, thông quan và lắp đặt, thời gian bảo hành thực tế tại xưởng có thể ngắn hơn đáng kể. Hỏi rõ mốc tính, thời hạn tối đa, và bảo hành áp dụng cho bộ phận nào (động cơ, bơm, tủ điện).</p>
+
+<h2>8. Phụ tùng hao mòn bền bao lâu và mua ở đâu?</h2>
+<p>Bơm trục vít có <b>stator và rotor</b> là vật tư hao mòn, tuổi thọ thường tính theo diện tích phun (vài nghìn m²). Mô-tơ súng phun, lưỡi cắt, con lăn cao su, đầu phun cũng cần thay định kỳ. Hỏi tuổi thọ dự kiến, thời gian giao phụ tùng và nên mua sẵn bộ dự phòng nào kèm máy – để máy không phải nằm chờ hàng vài tuần giữa mùa cao điểm.</p>
+
+<h2>9. Có những tài liệu và chứng từ gì?</h2>
+<ul>
+<li>Hướng dẫn vận hành bằng tiếng Anh (hoặc tiếng Việt), sơ đồ điện, video vận hành.</li>
+<li>Danh sách đóng gói (packing list) – đối chiếu trọng lượng, số kiện, thể tích với báo giá và PI.</li>
+<li><b>Giấy chứng nhận xuất xứ (C/O)</b>: với hàng từ Trung Quốc, C/O mẫu E giúp hưởng thuế suất ưu đãi theo Hiệp định thương mại tự do ASEAN – Trung Quốc. Hỏi rõ nhà cung cấp cấp được mẫu E hay chỉ C/O thông thường.</li>
+<li>Chứng nhận CE của thiết bị (nếu có) – lưu ý dấu CE trên động cơ chưa phải chứng nhận cho cả máy.</li>
+</ul>
+
+<h2>10. Đóng gói, thời gian giao và hỗ trợ chạy thử ra sao?</h2>
+<ul>
+<li>Quy cách đóng gói (thùng gỗ?), số kiện, trọng lượng, kích thước – để tính chi phí vận chuyển và bốc dỡ.</li>
+<li>Thời gian sản xuất và giao đến cảng.</li>
+<li>Có hỗ trợ <b>đào tạo vận hành, chạy thử lần đầu</b> không – tại chỗ hay từ xa qua video? Ai hỗ trợ khi máy gặp sự cố?</li>
+</ul>
+
+<h2>Và 3 câu cần tự hỏi mình</h2>
+<ul>
+<li><b>Điện và khí:</b> xưởng đã có nguồn 3 pha đủ công suất cho máy phun, máy trộn và máy nén khí chưa?</li>
+<li><b>Vật tư:</b> đã có nguồn cát khô đúng cỡ, sợi AR và xi măng ổn định chưa? Máy tốt đến đâu cũng không bù được vật liệu đầu vào biến động.</li>
+<li><b>Con người:</b> ai sẽ là thợ phun chính, ai phụ trách hiệu chỉnh máy và ghi sổ chất lượng mỗi ca?</li>
+</ul>
+
+<div class="note"><b>Góc nhìn Core Material:</b> Core Material đã làm rõ toàn bộ các câu hỏi trên với nhà sản xuất trước khi đưa <a href="https://www.corematerial.vn/may-moc/phun-grc/">thiết bị phun GRC/GFRC</a> về Việt Nam: máy chạy điện 3 pha 380 V / 50 Hz, máy trộn 200 L nằm trong bộ máy, súng phun có bộ cắt sợi, kèm sợi AR có phiếu thử nghiệm độc lập. Xem thêm quy trình vận hành trong bài <a href="san-xuat-grc-bang-may-phun-quy-trinh-7-buoc.html">Sản xuất GRC bằng máy phun: quy trình 7 bước</a>, hoặc <a href="https://www.corematerial.vn/lien-he/">liên hệ</a> để được tư vấn cấu hình.</div>
+""",
+"sources": [
+    ("Hiệp định Thương mại Hàng hóa ASEAN – Trung Quốc (ACFTA) – quy tắc xuất xứ, C/O mẫu E", None),
+    ("EN 15422 – Precast concrete products: Specification of glassfibres for reinforcement of mortars and concretes", None),
+    ("PCI MNL-130 – Manual for Quality Control for Plants and Production of Glass Fiber Reinforced Concrete Products", None),
+],
+},
+# ---------------------------------------------------------------- GRC-3
+{
+"slug": "cat-cho-grc-va-vua-kho-cach-chon-va-tru-nuoc",
+"cat": "vat-lieu",
+"date": "06/11/2026",
+"read": 7,
+"img": "cat-xam.jpg",
+"title": "Cát cho GRC và vữa khô: chọn cát thế nào, cỡ hạt bao nhiêu và cách trừ nước theo độ ẩm",
+"excerpt": "Trong GRC, cát chiếm gần một nửa khối lượng vữa nhưng thường được mua theo cảm tính. Cát quá cỡ làm tắc súng phun, cát bẩn làm tăng nước, cát ẩm làm lệch cấp phối. Đây là những gì cần kiểm soát và bảng trừ nước dùng ngay được.",
+"body": """
+<p>Trong cấp phối GRC phổ biến, cứ 100 phần xi măng thì có khoảng <b>100 – 120 phần cát</b>. Nói cách khác, cát chiếm gần một nửa khối lượng vữa. Vậy mà ở nhiều xưởng, cát vẫn được mua theo kiểu "cát mịn, sạch là được". Bài này tóm tắt những gì cần kiểm soát ở cát cho GRC phun và vữa khô đóng bao – hai ứng dụng khắt khe nhất về cát.</p>
+
+<h2>1. Loại cát: vì sao thường dùng cát thạch anh (silica)</h2>
+<ul>
+<li><b>Bền và trơ:</b> cát thạch anh có hàm lượng SiO₂ cao, hạt cứng, ít tạp chất phản ứng – phù hợp với cấu kiện mỏng cần cường độ và độ bền lâu dài.</li>
+<li><b>Màu sạch:</b> với GRC trắng hoặc GRC màu dùng xi măng trắng, cát sáng màu giúp màu sắc ổn định giữa các lô. Cát lẫn sét, hữu cơ làm bề mặt ngả xám, loang màu.</li>
+<li><b>Hạt tròn cạnh, cấp phối liên tục:</b> giúp vữa dễ bơm qua bơm trục vít và ống dẫn, giảm mài mòn stator.</li>
+</ul>
+
+<h2>2. Cỡ hạt: nhỏ nhưng không được quá mịn</h2>
+<p>Với GRC phun, cát cần đủ nhỏ để đi qua bơm, ống và đầu phun mà không gây tắc – thực tế thường dùng cát có cỡ hạt lớn nhất khoảng <b>1,2 mm</b>, đã sàng loại hạt quá cỡ. Tài liệu vận hành máy phun đều ghi rõ: <b>hạt quá cỡ trong vữa là nguyên nhân hàng đầu gây tắc ống và đầu phun</b>, cách khắc phục là sàng vữa trước khi đổ vào phễu.</p>
+<p>Ngược lại, cát quá mịn (nhiều hạt bụi dưới 0,075 mm) làm tăng diện tích bề mặt phải bao bọc bởi hồ xi măng – vữa "khát nước" hơn, phải thêm nước hoặc phụ gia, dẫn đến co ngót và nứt. Cát tốt cho GRC là cát <b>có cấp phối ổn định giữa các lô</b>: cùng lượng nước, vữa cho cùng độ dẻo.</p>
+<table>
+<tr><th>Ứng dụng</th><th>Yêu cầu cỡ hạt thường gặp</th><th>Lý do</th></tr>
+<tr><td>GRC phun</td><td>Cát mịn, hạt lớn nhất khoảng 1,2 mm, đã sàng loại hạt quá cỡ</td><td>Không tắc bơm, ống, đầu phun; bề mặt mịn</td></tr>
+<tr><td>GRC đổ khuôn (premix)</td><td>Tương tự, có thể nới nhẹ tùy chiều dày cấu kiện</td><td>Dễ chảy vào khuôn, bề mặt đẹp</td></tr>
+<tr><td>Vữa tô hoàn thiện, keo dán gạch</td><td>Cát mịn, FM khoảng 1,5</td><td>Bề mặt mịn, dễ cán</td></tr>
+<tr><td>Vữa xây, vữa tô lót</td><td>Cát trung, FM khoảng 2,0 – 2,5</td><td>Khung hạt chắc, ít co ngót</td></tr>
+</table>
+<p>Xem thêm về mô đun độ lớn (FM) trong bài <a href="cat-kho-cong-nghiep-do-am-mo-dun-do-lon.html">Cát khô công nghiệp cho vữa khô: độ ẩm và mô đun độ lớn</a>.</p>
+
+<h2>3. Tạp chất: bùn, sét và muối</h2>
+<p>Bùn, sét bám trên hạt cát làm giảm liên kết giữa hồ xi măng và cát, đồng thời hút nước – vữa cần nhiều nước hơn và dễ nứt. Với cấu kiện chỉ dày 10 – 15 mm như GRC, ảnh hưởng này lớn hơn nhiều so với bê tông thông thường. Cát nhiễm muối có thể gây loang trắng (muối nở hoa) trên bề mặt. Các chỉ tiêu và phương pháp thử cốt liệu được quy định trong <b>TCVN 7570</b> và bộ <b>TCVN 7572</b>; nhà sản xuất GRC nên đặt ngưỡng nội bộ chặt hơn.</p>
+
+<h2>4. Độ ẩm: biến số "vô hình" làm lệch cấp phối</h2>
+<p>Với <b>vữa khô đóng bao</b>, cát gần như bắt buộc phải khô dưới khoảng 0,5% – nếu không, nước trong cát phản ứng với xi măng ngay trong bao, gây vón cục và giảm hạn dùng.</p>
+<p>Với <b>GRC trộn tại xưởng</b>, cát ẩm vẫn dùng được nhưng phải trừ lượng nước cát mang theo. Nếu không, tỷ lệ nước/xi măng thực tế cao hơn thiết kế, cường độ giảm và nguy cơ nứt tăng. Công thức hiệu chỉnh:</p>
+<ul>
+<li>Khối lượng cát ẩm cần cân: <b>X = Xs ÷ (1 − A%)</b></li>
+<li>Lượng nước cần thêm: <b>W = Ws − X × A%</b></li>
+</ul>
+<p>Trong đó Xs là khối lượng cát khô theo cấp phối, Ws là lượng nước theo cấp phối, A% là độ ẩm cát. Bảng dưới tính sẵn cho mẻ có <b>100 kg cát khô và 22 kg nước</b> theo cấp phối:</p>
+<table>
+<tr><th>Độ ẩm cát (A%)</th><th>Cát ẩm cần cân (X)</th><th>Nước cần thêm (W)</th><th>Nước cát mang theo</th></tr>
+<tr><td>0,5%</td><td>100,5 kg</td><td>21,5 kg</td><td>0,5 kg</td></tr>
+<tr><td>1%</td><td>101,0 kg</td><td>21,0 kg</td><td>1,0 kg</td></tr>
+<tr><td>2%</td><td>102,0 kg</td><td>20,0 kg</td><td>2,0 kg</td></tr>
+<tr><td>3%</td><td>103,1 kg</td><td>18,9 kg</td><td>3,1 kg</td></tr>
+<tr><td>5%</td><td>105,3 kg</td><td>16,7 kg</td><td>5,3 kg</td></tr>
+</table>
+<p>Ở độ ẩm 5%, nếu không hiệu chỉnh, mẻ vữa thừa khoảng <b>5 kg nước – gần 25% lượng nước thiết kế</b>. Đó là chênh lệch đủ để biến một mẻ đạt chuẩn thành một mẻ nứt.</p>
+<div class="note"><b>Đo độ ẩm nhanh tại xưởng:</b> cân khoảng 500 g cát, sấy (tủ sấy 105 – 110 °C, hoặc chảo trên bếp nếu không có tủ) đến khi khối lượng không đổi, cân lại. Độ ẩm = (khối lượng trước − sau) ÷ khối lượng sau × 100%. Cát để ngoài trời có thể thay đổi độ ẩm trong ngày, nên đo lại khi thời tiết thay đổi.</div>
+
+<h2>5. Checklist nhận một lô cát</h2>
+<ul>
+<li>☐ Phiếu kiểm tra của nhà cung cấp: độ ẩm, thành phần hạt (hoặc FM), hàm lượng bùn sét, số lô.</li>
+<li>☐ Tự kiểm tra độ ẩm mẫu đại diện của lô.</li>
+<li>☐ Sàng thử: không có hạt quá cỡ so với yêu cầu (với GRC phun: khoảng 1,2 mm).</li>
+<li>☐ Quan sát màu so với mẫu lưu – đặc biệt với GRC trắng, GRC màu.</li>
+<li>☐ Đúc mẫu thử với cấp phối chuẩn khi đổi nguồn cát hoặc thấy lô bất thường.</li>
+<li>☐ Lưu kho có mái che, kê cao, dùng theo thứ tự nhập trước – xuất trước.</li>
+</ul>
+
+<h2>Kết luận</h2>
+<p>Cát rẻ nhất trên đơn giá chưa chắc rẻ nhất trên một mét vuông GRC đạt chuẩn. Một nguồn cát <b>khô, sạch, đúng cỡ và ổn định giữa các lô</b> giúp loại bỏ một biến số lớn trong sản xuất – để thợ phun và đội QC tập trung vào những việc khác.</p>
+<div class="note"><b>Góc nhìn Core Material:</b> Core Material cung cấp <a href="https://www.corematerial.vn/vat-lieu/#cat-kho">cát khô silica phân cỡ</a> cho vữa khô, keo dán gạch và GRC, kiểm soát độ ẩm và cấp phối theo từng lô. <a href="https://www.corematerial.vn/lien-he/">Liên hệ</a> để nhận mẫu thử cho xưởng của bạn.</div>
+""",
+"sources": [
+    ("TCVN 7570:2006 – Cốt liệu cho bê tông và vữa – Yêu cầu kỹ thuật", None),
+    ("TCVN 7572 – Cốt liệu cho bê tông và vữa – Phương pháp thử", None),
+    ("Tài liệu hướng dẫn vận hành máy phun GRC và quy trình sản xuất GRC của nhà sản xuất thiết bị (2026)", None),
+    ("PCI MNL-130 – Manual for Quality Control for Plants and Production of Glass Fiber Reinforced Concrete Products", None),
+],
+},
 # ---------------------------------------------------------------- GRC-2
 {
 "slug": "vi-sao-tam-grc-bi-nut-va-cach-phong-tranh",
