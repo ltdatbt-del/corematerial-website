@@ -41,13 +41,16 @@ MATERIALS = [
 },
 {
  "id": "white-cement", "form": "White cement", "name": "White cement", "short": "White cement",
- "img": "img/san-pham/xi-mang-trang.jpg",
+ "img": "img/san-pham/xi-mang-trang-coremat-bao.jpg",
+ "img_full": "img/san-pham/xi-mang-trang-coremat.jpg",
+ "img_caption": "Illustration of planned CoreMat packaging: 40 kg bag and jumbo bag, grade 42.5 / 52.5",
  "pledge": [("WHITENESS", "Whiteness"), ("CONSISTENCY", "Consistency"), ("STRENGTH", "Strength")],
  "intro": "White cement supply for material production (mortars, tile adhesives, putty, terrazzo tiles, decorative products) and for construction.",
  "points": [
    "Composition, strength class, whiteness and origin are provided for each specific product.",
    "Certificate of analysis (COA) supplied with every lot.",
    "Advice on choosing the right white cement for your application.",
+   "Developing a blended white cement line under our own CoreMat brand (planned: 40 kg and jumbo bags, grade 42.5 / 52.5).",
  ],
  "slots": ["Data sheet per product code (strength class, whiteness, bag size)"],
 },
