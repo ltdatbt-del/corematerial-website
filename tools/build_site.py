@@ -145,7 +145,7 @@ home = f'''
  <h2>Một đầu mối cho vật liệu và thiết bị</h2>
  <p class="lead">Từ nguyên liệu đầu vào cho nhà máy đến thiết bị cơ giới hóa và tự động hóa, Core Material giúp khách hàng chọn đúng giải pháp và kết nối nguồn cung phù hợp.</p>
  <div class="lines">
-  <a class="line-card" href="/vat-lieu/"><img src="/img/san-pham/cat-so-3.jpg" alt=""><div class="tx"><span class="k">CORE TRADING · CORE MATERIALS</span><h3>Nguyên liệu & Vật liệu</h3><p>Cát khô, xi măng trắng, phụ gia VAE/RDP và vật liệu trang trí cho nhà sản xuất và nhà thầu.</p><ul><li>Cát khô</li><li>Xi măng trắng</li><li>VAE / RDP</li><li>Đá mài & hạt màu</li></ul><span class="more">Khám phá vật liệu {ARROW}</span></div></a>
+  <a class="line-card" href="/vat-lieu/"><img src="/img/san-pham/cat-so-3.jpg" alt=""><div class="tx"><span class="k">CORE TRADING · CORE MATERIALS</span><h3>Nguyên liệu & Vật liệu</h3><p>Cát khô, xi măng trắng, phụ gia & khoáng chất, sợi gia cường bê tông và vật liệu trang trí cho nhà sản xuất và nhà thầu.</p><ul><li>Cát khô</li><li>Xi măng trắng</li><li>Phụ gia & khoáng chất</li><li>Sợi bê tông</li><li>Đá mài & cát màu</li></ul><span class="more">Khám phá vật liệu {ARROW}</span></div></a>
   <a class="line-card" href="/may-moc/"><img src="/img/thiet-bi/ung-dung-phun-vua-to.jpg" alt=""><div class="tx"><span class="k">CORE TECHNOLOGY</span><h3>Máy móc & Tự động hóa</h3><p>{e(TECH_INTRO)}</p><ul><li>Phun GRC/GFRC</li><li>Phun vữa tô tường</li><li>Robot xếp pallet</li></ul><span class="more">Khám phá thiết bị {ARROW}</span></div></a>
  </div>
 </div></section>
@@ -212,20 +212,25 @@ for i, m in enumerate(MATERIALS):
         pl = '<div class="pl">' + "".join(f'<span>{a}<small>{e(b)}</small></span>' for a,b in m["pledge"]) + '</div>'
     grades = ""
     if m.get("grades"):
-        grades = '<div class="grades">' + "".join(f'<figure><img src="/{im}" alt="Cát {e(n)} {e(r)}" loading="lazy"><figcaption><b>{e(n)}</b>{e(r)}</figcaption></figure>' for n,r,im in m["grades"]) + f'</div><p style="font-size:13px;color:var(--ink-3)">{e(m["grades_note"])}</p>'
+        grades = (f'<h3 style="font-size:18px;margin:22px 0 6px">{e(m["grades_title"])}</h3>' if m.get("grades_title") else "") + '<div class="grades">' + "".join(f'<figure><img src="/{im}" alt="Cát {e(n)} {e(r)}" loading="lazy"><figcaption><b>{e(n)}</b>{e(r)}</figcaption></figure>' for n,r,im in m["grades"]) + f'</div><p style="font-size:13px;color:var(--ink-3)">{e(m["grades_note"])}</p>'
     gal = ""
     if m.get("gallery"):
-        gal = '<div class="gal" style="margin-top:16px">' + "".join(f'<figure><img src="/{im}" alt="{e(c)}" loading="lazy"><figcaption>{e(c)}</figcaption></figure>' for im,c in m["gallery"]) + '</div>'
+        gal = (f'<h3 style="font-size:20px;margin:8px 0 14px">{e(m["gallery_title"])}</h3>' if m.get("gallery_title") else "") + '<div class="gal" style="margin-top:16px">' + "".join(f'<figure><img src="/{im}" alt="{e(c)}" loading="lazy"><figcaption>{e(c)}</figcaption></figure>' for im,c in m["gallery"]) + '</div>'
+        if m.get("videos"):
+            gal += '<div class="vgrid" style="margin-top:18px">' + "".join(vcard(v) for v in m["videos"]) + '</div>'
+    srcs = ""
+    if m.get("sources"):
+        srcs = "".join(f'<div class="note" style="margin:12px 0"><b>{e(t)}</b><br>{e(d)}' + (('<div class="chips" style="margin-top:10px">' + "".join(f'<span style="display:inline-block;border:1px solid var(--line);padding:4px 10px;margin:3px 6px 3px 0;font-size:13px;border-radius:2px;background:#fff">{e(g)}</span>' for g in gs) + '</div>') if gs else "") + '</div>' for t,d,gs in m["sources"])
     slots = "".join(slot(s) for s in m.get("slots", []))
     blocks.append(f'''<div class="pblock{" rev" if i%2 else ""}" id="{m["id"]}">
  <div class="pmedia">{media}{slots and '<div style="margin-top:10px;display:grid;gap:10px">'+slots+'</div>'}</div>
  <div><span class="tag">Nguyên liệu & Vật liệu</span><h2>{e(m["name"])}</h2>{pl}<p>{e(m["intro"])}</p>
-  <ul class="chk">{"".join(f"<li>{e(p)}</li>" for p in m["points"])}</ul>{grades}
+  <ul class="chk">{"".join(f"<li>{e(p)}</li>" for p in m["points"])}</ul>{srcs}{grades}
   <a class="btn btn-dark" href="{contact_href(m["form"])}">Yêu cầu báo giá {ARROW}</a>
  </div></div>{gal and '<div style="padding-bottom:40px">'+gal+'</div>'}''')
 chips = '<div class="chips" style="margin-top:22px">' + "".join(f'<a href="#{m["id"]}">{e(m["short"])}</a>' for m in MATERIALS) + '</div>'
 mat = phead([("/", "Trang chủ"), (None, "Nguyên liệu & Vật liệu")], "Nguyên liệu & Vật liệu", "Nguyên liệu cho nhà máy vật liệu xây dựng và vật liệu hoàn thiện cho công trình: cát khô, xi măng trắng, phụ gia và vật liệu trang trí.") + f'<section style="padding-top:40px"><div class="wrap">{chips}{"".join(blocks)}</div></section>' + cta("Cần mẫu hoặc báo giá vật liệu?", "Cho chúng tôi biết loại vật liệu, quy cách và sản lượng dự kiến.", "/lien-he/#form", "Gửi yêu cầu")
-write("/vat-lieu/", page("/vat-lieu/", "Nguyên liệu & Vật liệu: cát khô, xi măng trắng, VAE/RDP, vật liệu trang trí | Core Material JSC", "Cát silica sấy khô phân cỡ, xi măng trắng, phụ gia VAE/RDP, đá mài, hạt thủy tinh và bột màu cho sản xuất vật liệu và thi công.", mat, "/vat-lieu/", "/img/san-pham/cat-hero.jpg"))
+write("/vat-lieu/", page("/vat-lieu/", "Nguyên liệu & Vật liệu: cát khô, xi măng trắng, phụ gia, sợi bê tông, vật liệu trang trí | Core Material JSC", "Cát sông Mekong và cát trắng Bảo Lộc sấy khô phân cỡ, xi măng trắng, phụ gia VAE/RDP và khoáng chất, sợi gia cường bê tông, đá mài, cát màu và bột màu cho sản xuất vật liệu và thi công.", mat, "/vat-lieu/", "/img/san-pham/cat-hero.jpg"))
 
 # =================== MÁY MÓC ===================
 mm = phead([("/", "Trang chủ"), (None, "Máy móc & Tự động hóa")], "Core Technology — Máy móc & Tự động hóa", TECH_INTRO) + f'''

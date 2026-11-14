@@ -19,15 +19,20 @@ VALUES = [
 
 MATERIALS = [
 {
- "id": "dry-sand", "form": "Dry sand", "name": "Dry sand (graded silica sand)", "short": "Dry sand",
+ "id": "dry-sand", "form": "Dry sand", "name": "Dry sand (dried & graded silica sand)", "short": "Dry sand",
  "img": "img/san-pham/cat-hero.jpg",
  "pledge": [("CLEAN", "Clean"), ("CONSISTENT", "Consistent"), ("RELIABLE", "Reliable")],
- "intro": "Kiln-dried, screened and graded sand used as aggregate for dry-mix mortar, tile adhesive, self-levelling compounds, decorative concrete and other industrial applications.",
+ "intro": "Kiln-dried, screened and graded sand used as aggregate for dry-mix mortar, tile adhesive, self-levelling compounds, GRC, decorative concrete and other industrial applications. Core Material supplies from two sources: Mekong river sand dried and screened at a plant in An Giang, and white quarry sand from Bao Loc for light-coloured products.",
  "points": [
    "Multiple grain-size ranges to match your product formulation.",
    "Packing on request: jumbo bags or small bags.",
    "Technical data (moisture, grading, impurities) provided per lot and per order.",
  ],
+ "sources": [
+   ("Mekong river sand – An Giang drying plant", "River sand is dried in a rotary drum dryer, screened into size grades and filled into jumbo bags on site.", ["No. 1: 0 – 0.3 mm", "No. 2: 0.3 – 0.7 mm", "No. 3: 0.7 – 1.2 mm", "No. 4: 1.2 – 2.4 mm"]),
+   ("Bao Loc white sand (quarry sand)", "Light-coloured quarry sand for products that need a white tone: white tile adhesive, decorative mortar and putty, terrazzo.", []),
+ ],
+ "grades_title": "Bao Loc white sand – graded samples",
  "grades": [
    ("No. 1", "0.0 – 0.3 mm", "img/san-pham/cat-so-1.jpg"),
    ("No. 2", "0.3 – 0.7 mm", "img/san-pham/cat-so-2.jpg"),
@@ -37,39 +42,62 @@ MATERIALS = [
    ("No. 6", "3.5 – 5.0 mm", "img/san-pham/cat-so-6.jpg"),
  ],
  "grades_note": "Sample photos of graded sand. Size ranges are indicative; official values follow the inspection report of each lot.",
- "slots": ["Sample quality report (moisture, grading) – pending", "Photos of real packing / delivery"],
+ "gallery_title": "Mekong river sand drying & screening plant (An Giang)",
+ "gallery": [
+   ("img/san-pham/cat-mekong-xuong-say.jpg", "Rotary dryer & control room"), ("img/san-pham/cat-mekong-mau-so-1.jpg", "Sand sample No. 1"),
+   ("img/san-pham/cat-mekong-mau-so-2.jpg", "Sand sample No. 2"), ("img/san-pham/cat-mekong-dong-bao-jumbo.jpg", "Jumbo bag filling at the plant"),
+   ("img/san-pham/cat-mekong-bao-jumbo.jpg", "Finished jumbo bag"), ("img/san-pham/cat-bao-jumbo-minh-hoa.jpg", "Illustration of planned Core Material jumbo bag"),
+ ],
+ "videos": [("media/video-cat-mekong-xuong.mp4", "media/video-cat-mekong-xuong-poster.jpg", "Sand drying & screening plant", "Mekong river sand, An Giang"),
+            ("media/video-cat-mekong-mau.mp4", "media/video-cat-mekong-mau-poster.jpg", "Checking finished sand", "Mekong river sand, An Giang")],
+ "slots": ["Sample quality report (moisture, grading) – pending"],
 },
 {
  "id": "white-cement", "form": "White cement", "name": "White cement", "short": "White cement",
  "img": "img/san-pham/xi-mang-trang-coremat-bao.jpg",
  "img_full": "img/san-pham/xi-mang-trang-coremat.jpg",
- "img_caption": "Illustration of planned CoreMat packaging: 40 kg bag and jumbo bag, grade 42.5 / 52.5",
+ "img_caption": "Illustration of planned CoreMat packaging: 40 kg bag and jumbo bag",
  "pledge": [("WHITENESS", "Whiteness"), ("CONSISTENCY", "Consistency"), ("STRENGTH", "Strength")],
- "intro": "White cement supply for material production (mortars, tile adhesives, putty, terrazzo tiles, decorative products) and for construction.",
+ "intro": "White cement supply for material production (mortars, tile adhesives, putty, terrazzo tiles, terrazzo grinding stones, decorative products) and for construction.",
  "points": [
-   "Composition, strength class, whiteness and origin are provided for each specific product.",
-   "Certificate of analysis (COA) supplied with every lot.",
+   "Blended white cement line under our own CoreMat brand (in development), 40 kg and jumbo bags: PCW 32.5 – for grinding stones; PCW 42.5 – for terrazzo and putty; PCW 52.5 – for premium putty.",
+   "Composition, strength class, whiteness and origin are provided for each specific product; certificate of analysis (COA) with every lot.",
    "Advice on choosing the right white cement for your application.",
-   "Developing a blended white cement line under our own CoreMat brand (planned: 40 kg and jumbo bags, grade 42.5 / 52.5).",
+   "Research direction for specialty white cements: UHPC, micro-cement, self-levelling compounds, terrazzo-specific cement.",
  ],
  "slots": ["Data sheet per product code (strength class, whiteness, bag size)"],
 },
 {
- "id": "admixtures", "form": "VAE / RDP", "name": "Construction admixtures & chemicals (VAE, RDP…)", "short": "VAE / RDP",
+ "id": "admixtures", "form": "VAE / RDP", "name": "Admixtures, minerals & construction chemicals", "short": "Admixtures & minerals",
  "img": None,
- "intro": "VAE emulsions, redispersible polymer powders (RDP) and other admixtures for dry-mix mortar, tile adhesive, waterproofing and putty.",
+ "intro": "VAE emulsions, redispersible polymer powders (RDP), minerals and other admixtures for dry-mix mortar, tile adhesive, waterproofing, putty and paint.",
  "points": [
-   "Advice on admixture selection by application and technical requirement.",
-   "Technical documents (TDS, SDS) supplied for each product.",
+   "Polymer admixtures: VAE, RDP – better adhesion and anti-sag for tile adhesives and mortars.",
+   "Minerals: ultra-white CaCO₃ powder, talc, BaSO₄, gypsum, titanium dioxide (TiO₂).",
+   "Planned extensions: waterproofing admixtures, surface hardeners, specialty adhesives.",
+   "Selection advice by application; technical documents (TDS, SDS) for each product.",
  ],
  "slots": ["Product code list and TDS"],
 },
 {
- "id": "decorative", "form": "Terrazzo chips / colour granules / pigments", "name": "Terrazzo chips, glass granules & pigments", "short": "Decorative materials",
+ "id": "concrete-fibres", "form": "Concrete reinforcing fibres", "name": "Concrete reinforcing fibres (steel, PP)", "short": "Concrete fibres",
+ "img": None,
+ "intro": "Fibres dispersed in concrete and mortar limit shrinkage cracking and improve toughness and impact resistance – for industrial floors, shotcrete, precast elements and mortars.",
+ "points": [
+   "Hooked-end steel fibres 3D / 4D: industrial floors, tunnel and slope shotcrete, precast elements.",
+   "Polypropylene (PP) fibres: shrinkage-crack control for mortar, concrete, floors and screeds.",
+   "Dosage advice by application; technical data sheet (TDS) for each product code.",
+ ],
+ "slots": ["Photos of steel / PP fibre products and data sheets"],
+},
+{
+ "id": "decorative", "form": "Terrazzo chips / colour granules / pigments", "name": "Terrazzo chips, coloured sand, glass granules & pigments", "short": "Decorative materials",
  "img": "img/da-ho-phach.jpg",
- "intro": "Decorative materials for terrazzo, architectural concrete and finishes: stone chips, coloured glass granules, coloured sand and pigments.",
+ "intro": "Decorative materials for terrazzo, decorative floors and walls, architectural concrete and finishes: stone chips, coloured sand, coloured glass granules and pigments.",
  "points": [
    "Wide range of colours and grain sizes.",
+   "Natural coloured sand, epoxy-coated coloured sand and colour flakes for decorative floors and walls.",
+   "Toll grinding of coloured stone / sand into ultra-fine powder for paints and coloured mortars, on order.",
    "Samples available for architects and contractors.",
  ],
  "gallery": [
@@ -207,7 +235,7 @@ PROCESS = [
 SCOPE_NOTE = "Scope of supply and support is defined per equipment and per specific agreement."
 
 FORM_GROUPS = [
- ("Raw materials & Materials", ["Dry sand", "White cement", "VAE / RDP", "Terrazzo chips / colour granules / pigments"]),
+ ("Raw materials & Materials", ["Dry sand", "White cement", "VAE / RDP", "Concrete reinforcing fibres", "Terrazzo chips / colour granules / pigments"]),
  ("Equipment & Automation", [e["form"] for e in EQUIPMENT]),
  ("Other", ["Investment partnership", "Other"]),
 ]

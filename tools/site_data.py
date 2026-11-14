@@ -28,15 +28,20 @@ VALUES = [
 # ---------------- NGUYÊN LIỆU & VẬT LIỆU ----------------
 MATERIALS = [
 {
- "id": "cat-kho", "form": "Cát khô", "name": "Cát khô (cát silica phân cỡ)", "short": "Cát khô",
+ "id": "cat-kho", "form": "Cát khô", "name": "Cát khô (cát silica sấy & phân cỡ)", "short": "Cát khô",
  "img": "img/san-pham/cat-hero.jpg",
  "pledge": [("CLEAN", "Sạch"), ("CONSISTENT", "Đồng đều"), ("RELIABLE", "Đáng tin cậy")],
- "intro": "Cát đã sấy khô và sàng phân cỡ, dùng làm cốt liệu cho vữa khô trộn sẵn, keo dán gạch, vữa tự san phẳng, bê tông trang trí và các ứng dụng công nghiệp khác.",
+ "intro": "Cát đã sấy khô và sàng phân cỡ, dùng làm cốt liệu cho vữa khô trộn sẵn, keo dán gạch, vữa tự san phẳng, GRC, bê tông trang trí và các ứng dụng công nghiệp khác. Core Material cung cấp từ hai nguồn: cát sông Mekong sấy – sàng tại xưởng ở An Giang và cát trắng mỏ Bảo Lộc cho các dòng sản phẩm cần màu sáng.",
  "points": [
    "Nhiều cỡ hạt để lựa chọn theo công thức sản phẩm.",
    "Đóng gói theo yêu cầu: bao Jumbo hoặc bao nhỏ.",
    "Thông số kỹ thuật (độ ẩm, cấp phối, tạp chất) cung cấp theo từng lô và từng đơn hàng.",
  ],
+ "sources": [
+   ("Cát sông Mekong – xưởng sấy An Giang", "Cát sông được sấy bằng lò sấy thùng quay, sàng phân cỡ và đóng bao Jumbo ngay tại xưởng.", ["Số 1: 0 – 0,3 mm", "Số 2: 0,3 – 0,7 mm", "Số 3: 0,7 – 1,2 mm", "Số 4: 1,2 – 2,4 mm"]),
+   ("Cát trắng Bảo Lộc (cát mỏ)", "Cát mỏ màu sáng cho sản phẩm cần màu trắng: keo dán gạch trắng, vữa và bột trét trang trí, terrazzo.", []),
+ ],
+ "grades_title": "Cát trắng Bảo Lộc – mẫu phân cỡ",
  "grades": [
    ("Số 1", "0,0 – 0,3 mm", "img/san-pham/cat-so-1.jpg"),
    ("Số 2", "0,3 – 0,7 mm", "img/san-pham/cat-so-2.jpg"),
@@ -46,39 +51,62 @@ MATERIALS = [
    ("Số 6", "3,5 – 5,0 mm", "img/san-pham/cat-so-6.jpg"),
  ],
  "grades_note": "Ảnh mẫu cát phân cỡ. Dải cỡ hạt mang tính tham khảo; thông số chính thức theo phiếu kiểm tra của từng lô.",
- "slots": ["Phiếu kiểm tra chất lượng mẫu (độ ẩm, cấp phối) – chờ tài liệu", "Ảnh đóng gói / giao hàng thực tế"],
+ "gallery_title": "Xưởng sấy – sàng cát sông Mekong (An Giang)",
+ "gallery": [
+   ("img/san-pham/cat-mekong-xuong-say.jpg", "Lò sấy thùng quay & trạm điều khiển"), ("img/san-pham/cat-mekong-mau-so-1.jpg", "Mẫu cát số 1"),
+   ("img/san-pham/cat-mekong-mau-so-2.jpg", "Mẫu cát số 2"), ("img/san-pham/cat-mekong-dong-bao-jumbo.jpg", "Đóng bao Jumbo tại xưởng"),
+   ("img/san-pham/cat-mekong-bao-jumbo.jpg", "Bao Jumbo thành phẩm"), ("img/san-pham/cat-bao-jumbo-minh-hoa.jpg", "Minh họa bao Jumbo Core Material (dự kiến)"),
+ ],
+ "videos": [("media/video-cat-mekong-xuong.mp4", "media/video-cat-mekong-xuong-poster.jpg", "Xưởng sấy – sàng cát", "Cát sông Mekong, An Giang"),
+            ("media/video-cat-mekong-mau.mp4", "media/video-cat-mekong-mau-poster.jpg", "Kiểm tra mẫu cát thành phẩm", "Cát sông Mekong, An Giang")],
+ "slots": ["Phiếu kiểm tra chất lượng mẫu (độ ẩm, cấp phối) – chờ tài liệu"],
 },
 {
  "id": "xi-mang-trang", "form": "Xi măng trắng", "name": "Xi măng trắng", "short": "Xi măng trắng",
  "img": "img/san-pham/xi-mang-trang-coremat-bao.jpg",
  "img_full": "img/san-pham/xi-mang-trang-coremat.jpg",
- "img_caption": "Hình minh họa bao bì CoreMat dự kiến: bao 40 kg và Jumbo, cấp 42.5 / 52.5",
+ "img_caption": "Hình minh họa bao bì CoreMat dự kiến: bao 40 kg và Jumbo",
  "pledge": [("WHITENESS", "Độ trắng"), ("CONSISTENCY", "Tính ổn định"), ("STRENGTH", "Cường độ")],
- "intro": "Cung cấp xi măng trắng cho sản xuất vật liệu (vữa, keo dán gạch, bột trét, gạch terrazzo, sản phẩm trang trí) và cho thi công.",
+ "intro": "Cung cấp xi măng trắng cho sản xuất vật liệu (vữa, keo dán gạch, bột trét, gạch terrazzo, đá mài, sản phẩm trang trí) và cho thi công.",
  "points": [
-   "Thông tin thành phần, cấp cường độ, độ trắng và xuất xứ được cung cấp theo từng sản phẩm cụ thể.",
-   "Có chứng nhận chất lượng (COA) đi kèm theo lô hàng.",
+   "Dòng xi măng trắng phối trộn thương hiệu CoreMat (đang phát triển), quy cách bao 40 kg và Jumbo: PCW 32.5 – cho đá mài; PCW 42.5 – cho terrazzo và bột trét; PCW 52.5 – cho bột trét cao cấp.",
+   "Thông tin thành phần, cấp cường độ, độ trắng và xuất xứ được cung cấp theo từng sản phẩm cụ thể; có chứng nhận chất lượng (COA) theo lô hàng.",
    "Tư vấn lựa chọn loại xi măng trắng phù hợp với ứng dụng.",
-   "Đang phát triển dòng xi măng trắng phối trộn mang thương hiệu CoreMat (dự kiến bao 40 kg và Jumbo, cấp 42.5 / 52.5).",
+   "Định hướng nghiên cứu các dòng xi măng trắng đặc chủng: UHPC, micro-cement, vữa tự san phẳng, xi măng chuyên dụng cho terrazzo.",
  ],
  "slots": ["Bảng thông số theo từng mã sản phẩm (cấp cường độ, độ trắng, quy cách bao)"],
 },
 {
- "id": "hoa-chat", "form": "VAE / RDP", "name": "Phụ gia & hóa chất xây dựng (VAE, RDP…)", "short": "VAE / RDP",
+ "id": "hoa-chat", "form": "VAE / RDP", "name": "Phụ gia, khoáng chất & hóa chất xây dựng", "short": "Phụ gia & khoáng chất",
  "img": None,
- "intro": "Nhũ tương VAE và bột polymer tái phân tán RDP cùng các phụ gia cho vữa khô, keo dán gạch, chống thấm và bột trét.",
+ "intro": "Nhũ tương VAE, bột polymer tái phân tán RDP, khoáng chất và các phụ gia cho vữa khô, keo dán gạch, chống thấm, bột trét và sơn.",
  "points": [
-   "Tư vấn lựa chọn phụ gia theo ứng dụng và yêu cầu kỹ thuật.",
-   "Cung cấp tài liệu kỹ thuật (TDS, SDS) theo từng sản phẩm.",
+   "Phụ gia polymer: VAE, RDP – tăng bám dính, chống chảy xệ cho keo dán gạch và vữa.",
+   "Khoáng chất: bột CaCO₃ siêu trắng, talc, BaSO₄, thạch cao, titan dioxide (TiO₂).",
+   "Định hướng mở rộng: phụ gia chống thấm, chất tăng cứng bề mặt (hardener), keo dán chuyên dụng.",
+   "Tư vấn lựa chọn theo ứng dụng; cung cấp tài liệu kỹ thuật (TDS, SDS) theo từng sản phẩm.",
  ],
  "slots": ["Danh mục mã sản phẩm và tài liệu TDS"],
 },
 {
- "id": "trang-tri", "form": "Đá mài / hạt màu / bột màu", "name": "Đá mài, hạt thủy tinh & bột màu", "short": "Vật liệu trang trí",
+ "id": "soi-be-tong", "form": "Sợi gia cường bê tông", "name": "Sợi gia cường bê tông (sợi thép, sợi PP)", "short": "Sợi bê tông",
+ "img": None,
+ "intro": "Sợi phân tán trong bê tông và vữa giúp hạn chế nứt co ngót, tăng độ dai và khả năng chịu va đập – dùng cho sàn công nghiệp, bê tông phun, cấu kiện đúc sẵn và vữa.",
+ "points": [
+   "Sợi thép neo đầu 3D / 4D: sàn công nghiệp, bê tông phun hầm – mái dốc, cấu kiện đúc sẵn.",
+   "Sợi polypropylene (PP): chống nứt co ngót cho vữa, bê tông, sàn và lớp láng.",
+   "Tư vấn liều lượng theo ứng dụng; tài liệu kỹ thuật (TDS) theo từng mã sản phẩm.",
+ ],
+ "slots": ["Ảnh sản phẩm sợi thép / sợi PP và bảng thông số"],
+},
+{
+ "id": "trang-tri", "form": "Đá mài / hạt màu / bột màu", "name": "Đá mài, cát màu, hạt thủy tinh & bột màu", "short": "Vật liệu trang trí",
  "img": "img/da-ho-phach.jpg",
- "intro": "Vật liệu trang trí cho terrazzo, bê tông nghệ thuật và hoàn thiện kiến trúc: hạt đá mài, hạt thủy tinh màu, cát màu và bột màu.",
+ "intro": "Vật liệu trang trí cho terrazzo, sàn và tường trang trí, bê tông nghệ thuật và hoàn thiện kiến trúc: hạt đá mài, cát màu, hạt thủy tinh màu và bột màu.",
  "points": [
    "Nhiều màu sắc và kích cỡ hạt.",
+   "Cát màu tự nhiên, cát màu phủ epoxy và vảy màu (flake) cho sàn, tường trang trí.",
+   "Gia công nghiền đá màu / cát màu siêu mịn cho sơn và vữa màu theo đơn hàng.",
    "Hỗ trợ mẫu để kiến trúc sư và nhà thầu lựa chọn.",
  ],
  "gallery": [
@@ -218,7 +246,7 @@ SCOPE_NOTE = "Phạm vi cung cấp và hỗ trợ được xác định theo t�
 
 # Nhóm cho form liên hệ
 FORM_GROUPS = [
- ("Nguyên liệu & Vật liệu", ["Cát khô", "Xi măng trắng", "VAE / RDP", "Đá mài / hạt màu / bột màu"]),
+ ("Nguyên liệu & Vật liệu", ["Cát khô", "Xi măng trắng", "VAE / RDP", "Sợi gia cường bê tông", "Đá mài / hạt màu / bột màu"]),
  ("Máy móc & Tự động hóa", [e["form"] for e in EQUIPMENT]),
  ("Khác", ["Hợp tác đầu tư", "Khác"]),
 ]
