@@ -133,7 +133,7 @@ home = f'''
   </div>
   <div class="hero-media">
    <figure><img src="/img/san-pham/cat-hero.jpg" alt="Mẫu cát silica phân cỡ Core Material"><figcaption><b>Vật liệu</b> · Cát silica phân cỡ</figcaption></figure>
-   <figure><img src="/img/thiet-bi/may-phun-vua-2.jpg" alt="Máy phun vữa tô tường"><figcaption><b>Thiết bị</b> · Máy phun vữa</figcaption></figure>
+   <figure><img src="/img/thiet-bi/may-bom-phun-vua-tw20f.jpg" alt="Máy phun vữa tô tường"><figcaption><b>Thiết bị</b> · Máy phun vữa</figcaption></figure>
    <figure><img src="/media/video-phun-grc-poster.jpg" alt="Thiết bị phun GRC"><figcaption><b>Công nghệ</b> · Phun GRC</figcaption></figure>
   </div>
  </div>
@@ -146,7 +146,7 @@ home = f'''
  <p class="lead">Từ nguyên liệu đầu vào cho nhà máy đến thiết bị cơ giới hóa và tự động hóa, Core Material giúp khách hàng chọn đúng giải pháp và kết nối nguồn cung phù hợp.</p>
  <div class="lines">
   <a class="line-card" href="/vat-lieu/"><img src="/img/san-pham/cat-so-3.jpg" alt=""><div class="tx"><span class="k">CORE TRADING · CORE MATERIALS</span><h3>Nguyên liệu & Vật liệu</h3><p>Cát khô, xi măng trắng, phụ gia VAE/RDP và vật liệu trang trí cho nhà sản xuất và nhà thầu.</p><ul><li>Cát khô</li><li>Xi măng trắng</li><li>VAE / RDP</li><li>Đá mài & hạt màu</li></ul><span class="more">Khám phá vật liệu {ARROW}</span></div></a>
-  <a class="line-card" href="/may-moc/"><img src="/img/thiet-bi/may-phun-vua-5.jpg" alt=""><div class="tx"><span class="k">CORE TECHNOLOGY</span><h3>Máy móc & Tự động hóa</h3><p>{e(TECH_INTRO)}</p><ul><li>Phun GRC/GFRC</li><li>Phun vữa tô tường</li><li>Robot xếp pallet</li></ul><span class="more">Khám phá thiết bị {ARROW}</span></div></a>
+  <a class="line-card" href="/may-moc/"><img src="/img/thiet-bi/ung-dung-phun-vua-to.jpg" alt=""><div class="tx"><span class="k">CORE TECHNOLOGY</span><h3>Máy móc & Tự động hóa</h3><p>{e(TECH_INTRO)}</p><ul><li>Phun GRC/GFRC</li><li>Phun vữa tô tường</li><li>Robot xếp pallet</li></ul><span class="more">Khám phá thiết bị {ARROW}</span></div></a>
  </div>
 </div></section>
 
@@ -236,7 +236,7 @@ mm = phead([("/", "Trang chủ"), (None, "Máy móc & Tự động hóa")], "Cor
 </div></section>
 <section class="dark"><div class="wrap"><span class="tag">Quy trình</span><h2>Tư vấn và triển khai thiết bị</h2>{steps()}</div></section>
 ''' + cta("Trao đổi nhu cầu thiết bị", "Mô tả ứng dụng, năng suất mong muốn và địa điểm lắp đặt — chúng tôi sẽ cùng nhà cung cấp đề xuất cấu hình phù hợp.", "/lien-he/#form", "Trao đổi nhu cầu thiết bị")
-write("/may-moc/", page("/may-moc/", "Máy móc & Tự động hóa: phun GRC, máy phun vữa, robot xếp pallet | Core Material JSC", "Thiết bị phun GRC/GFRC, máy phun vữa tô tường, robot bốc xếp & xếp pallet cho ngành vật liệu xây dựng — tư vấn, cung cấp qua mạng lưới nhà cung cấp.", mm, "/may-moc/", "/img/thiet-bi/may-phun-vua-2.jpg"))
+write("/may-moc/", page("/may-moc/", "Máy móc & Tự động hóa: phun GRC, máy phun vữa, robot xếp pallet | Core Material JSC", "Thiết bị phun GRC/GFRC, máy phun vữa tô tường, robot bốc xếp & xếp pallet cho ngành vật liệu xây dựng — tư vấn, cung cấp qua mạng lưới nhà cung cấp.", mm, "/may-moc/", "/img/thiet-bi/may-bom-phun-vua-tw20f.jpg"))
 
 for q in EQUIPMENT:
     media = f'<img src="/{q["img"]}" alt="{e(q["name"])}">' if q["img"] else (slot("Ảnh thiết bị thật có quyền sử dụng") or '<div class="ph hex" style="aspect-ratio:4/3;border-radius:3px"><svg style="color:#fff;width:90px;height:105px"><use href="#cm"/></svg></div>')
@@ -259,13 +259,20 @@ for q in EQUIPMENT:
     elif PREVIEW:
         vids = f'<section><div class="wrap">{slot("Video thiết bị hoạt động")}</div></section>'
     slots = "".join(slot(s) for s in q.get("slots", []))
+    models = ""
+    if q.get("models"):
+        mcards = "".join(f'<div class="card"><div class="ph" style="background-image:url(/{im});background-color:#f0f0ee"></div><div class="tx"><span class="k">{e(fit)}</span><h3>{e(nm)}</h3><table class="spec" style="margin:6px 0 0;font-size:13.5px">{"".join(f"<tr><th style=\"width:47%\">{e(c)}</th><td>{e(v)}</td></tr>" for c,v in zip(q["model_cols"], vals))}</table></div></div>' for nm,im,fit,vals in q["models"])
+        models = f'<section class="alt"><div class="wrap"><span class="tag">{e(q["k"])}</span><h2>{e(q["models_title"])}</h2><p class="lead">{e(q["models_lead"])}</p><div class="grid g3" style="margin-top:32px">{mcards}</div><div class="note" style="margin-top:22px">{e(q["models_note"])}</div></div></section>'
+    apps_g = ""
+    if q.get("apps"):
+        apps_g = f'<section><div class="wrap"><h2>{e(q["apps_title"])}</h2><div class="gal" style="margin-top:24px">' + "".join(f'<figure><img src="/{im}" alt="{e(c)}" loading="lazy"><figcaption>{e(c)}</figcaption></figure>' for im,c in q["apps"]) + '</div></div></section>'
     body = phead([("/", "Trang chủ"), ("/may-moc/", "Máy móc & Tự động hóa"), (None, q["name"])], q["name"], q["short"]) + f'''
 <section><div class="wrap"><div class="pblock" style="padding-top:0;border:0">
  <div class="pmedia">{media}{thumbs}{slots and '<div style="margin-top:10px;display:grid;gap:10px">'+slots+'</div>'}</div>
  <div><span class="tag">{e(q["k"])}</span>{"".join(f"<p>{e(p)}</p>" for p in q["intro"])}{diff}{secs}
   <h3 style="font-size:18px;margin:22px 0 6px">Thông số kỹ thuật</h3>{spec}
   <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:8px"><a class="btn btn-dark" href="{contact_href(q["form"])}">Trao đổi nhu cầu thiết bị {ARROW}</a><a class="btn btn-line" href="/may-moc/">← Tất cả thiết bị</a></div>
- </div></div></div></section>{pkg}{vids}
+ </div></div></div></section>{models}{apps_g}{pkg}{vids}
 <section class="paper"><div class="wrap"><span class="tag">Quy trình</span><h2>Tư vấn và triển khai</h2>{steps()}</div></section>'''
     write(f"/may-moc/{q['id']}/", page(f"/may-moc/{q['id']}/", f"{q['name']} | Core Material JSC", q["short"], body, "/may-moc/", ("/"+q["img"]) if q["img"] else "/img/og-image.jpg"))
 
