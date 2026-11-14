@@ -127,7 +127,7 @@ EQUIPMENT = [
  "name": "Wall plastering (mortar spraying) machine", "k": "On-site construction",
  "img": "img/thiet-bi/may-bom-phun-vua-tw20f.jpg",
  "gallery": ["img/thiet-bi/ung-dung-phun-vua-to.jpg", "img/thiet-bi/ung-dung-phun-vua-tran-tuong.jpg", "img/thiet-bi/ung-dung-gia-co-mai-doc.jpg"],
- "short": "Squeeze-type mortar pumps that mechanise mixing, pumping and spraying for wall plastering, lightweight-wall grouting and slope protection – three model lines by project scale.",
+ "short": "Two mortar-spraying machine lines for on-site work: squeeze-type mortar pumps (3 models, long-distance and high-rise pumping) and a mobile screw-type plastering machine.",
  "intro": [
    "Shortage of skilled plasterers, rising labour costs and uneven hand-applied quality (hollows, cracks, varying coat thickness) are the bottlenecks of traditional plastering. A mortar pump mechanises the whole chain: mixing – pumping through the line – spraying directly onto the surface.",
    "The machines Core Material offers use the squeeze-pump principle: rollers compress a squeeze hose to push the mortar, so the mortar only travels inside the hose – fewer wearing parts in contact with mortar and quick cleaning.",
@@ -152,7 +152,7 @@ EQUIPMENT = [
  "models_note": "Flow rates and distances are manufacturer-stated; maximum vertical and horizontal distances are not achieved at the same time. Actual results depend on mortar mix, aggregate characteristics, admixture ratio and line layout – confirm with your mortar and site conditions before selecting a machine.",
  "apps_title": "Applications",
  "apps": [
-   ("img/thiet-bi/ung-dung-phun-vua-tran-tuong.jpg", "Spray plastering of ceilings and walls"),
+   ("img/thiet-bi/ung-dung-phun-vua-tran-tuong.jpg", "Spray plastering of walls"),
    ("img/thiet-bi/ung-dung-bom-vua-vach-nhe.jpg", "Lightweight partition wall grouting"),
    ("img/thiet-bi/ung-dung-coffa-de-lai.jpg", "Stay-in-place formwork"),
    ("img/thiet-bi/ung-dung-gia-co-mai-doc.jpg", "Slope and riverbank protection"),
@@ -164,14 +164,20 @@ EQUIPMENT = [
    ("Spare parts & support", "Spare-parts plan (squeeze hoses, spray guns…) and technical support channel as agreed."),
  ],
  "spec": [
-   ("Principle", "Squeeze (peristaltic) mortar pump"),
-   ("Models", "TW-60 · TW-20F · TW-75 / TW-105"),
+   ("Principle", "Squeeze (peristaltic) pump or screw pump (rotor / stator)"),
+   ("Models", "Squeeze pumps: TW-60 · TW-20F · TW-75 / TW-105; mobile screw-type plastering machine"),
    ("Flow rate", "0.7 – 6 m³/h depending on model"),
    ("Max. pumping distance", "up to 60 m vertical, 200 m horizontal depending on model"),
    ("Power supply", "3-phase 220 V / 50 Hz (standard); 380 V grid arrangement confirmed when ordering"),
    ("Origin", "Taiwan"),
  ],
- "videos": [],
+ "line2": {
+   "title": "Screw-type plastering machine",
+   "lead": "A second line from a different manufacturer: a compact, mobile screw-type plastering machine for wall plastering on small and medium projects.",
+   "gallery": [("img/thiet-bi/may-phun-vua-5.jpg", "Machine overview"), ("img/thiet-bi/may-phun-vua-4.jpg", "Hopper with screen"), ("img/thiet-bi/may-phun-vua-2.jpg", "Rear view"), ("img/thiet-bi/may-phun-vua-1.jpg", "Control panel")],
+   "points": ["Screw pump (rotor / stator) for continuous, steady mortar delivery", "Hopper with screen and vibrator motor to break up lumps", "Electrical control panel; on-board air compressor (depending on configuration)", "Wheeled frame, easy to move around the site", "Specifications and configuration supplied with the catalogue – please contact us"],
+ },
+ "videos": [("media/video-phun-vua.mp4", "media/video-phun-vua-poster.jpg", "Screw-type plastering machine", "Video from the equipment supplier")],
  "slots": ["Video/photos of jobs in Vietnam", "Dimensions and weight per model (pending detailed catalogue)"],
 },
 {

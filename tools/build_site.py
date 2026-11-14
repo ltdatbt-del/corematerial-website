@@ -263,6 +263,10 @@ for q in EQUIPMENT:
     if q.get("models"):
         mcards = "".join(f'<div class="card"><div class="ph" style="background-image:url(/{im});background-color:#f0f0ee"></div><div class="tx"><span class="k">{e(fit)}</span><h3>{e(nm)}</h3><table class="spec" style="margin:6px 0 0;font-size:13.5px">{"".join(f"<tr><th style=\"width:47%\">{e(c)}</th><td>{e(v)}</td></tr>" for c,v in zip(q["model_cols"], vals))}</table></div></div>' for nm,im,fit,vals in q["models"])
         models = f'<section class="alt"><div class="wrap"><span class="tag">{e(q["k"])}</span><h2>{e(q["models_title"])}</h2><p class="lead">{e(q["models_lead"])}</p><div class="grid g3" style="margin-top:32px">{mcards}</div><div class="note" style="margin-top:22px">{e(q["models_note"])}</div></div></section>'
+    line2 = ""
+    if q.get("line2"):
+        l2 = q["line2"]
+        line2 = f'<section class="paper"><div class="wrap"><span class="tag">{e(q["k"])}</span><h2>{e(l2["title"])}</h2><p class="lead">{e(l2["lead"])}</p><div class="gal" style="margin-top:28px">' + "".join(f'<figure style="aspect-ratio:4/3"><img src="/{im}" alt="{e(c)}" loading="lazy"><figcaption>{e(c)}</figcaption></figure>' for im,c in l2["gallery"]) + '</div><div class="pblock" style="display:block;padding:0;border:0;margin-top:22px;max-width:820px"><ul class="chk">' + "".join(f"<li>{e(x)}</li>" for x in l2["points"]) + '</ul></div></div></section>'
     apps_g = ""
     if q.get("apps"):
         apps_g = f'<section><div class="wrap"><h2>{e(q["apps_title"])}</h2><div class="gal" style="margin-top:24px">' + "".join(f'<figure><img src="/{im}" alt="{e(c)}" loading="lazy"><figcaption>{e(c)}</figcaption></figure>' for im,c in q["apps"]) + '</div></div></section>'
@@ -272,7 +276,7 @@ for q in EQUIPMENT:
  <div><span class="tag">{e(q["k"])}</span>{"".join(f"<p>{e(p)}</p>" for p in q["intro"])}{diff}{secs}
   <h3 style="font-size:18px;margin:22px 0 6px">Thông số kỹ thuật</h3>{spec}
   <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:8px"><a class="btn btn-dark" href="{contact_href(q["form"])}">Trao đổi nhu cầu thiết bị {ARROW}</a><a class="btn btn-line" href="/may-moc/">← Tất cả thiết bị</a></div>
- </div></div></div></section>{models}{apps_g}{pkg}{vids}
+ </div></div></div></section>{models}{line2}{apps_g}{pkg}{vids}
 <section class="paper"><div class="wrap"><span class="tag">Quy trình</span><h2>Tư vấn và triển khai</h2>{steps()}</div></section>'''
     write(f"/may-moc/{q['id']}/", page(f"/may-moc/{q['id']}/", f"{q['name']} | Core Material JSC", q["short"], body, "/may-moc/", ("/"+q["img"]) if q["img"] else "/img/og-image.jpg"))
 

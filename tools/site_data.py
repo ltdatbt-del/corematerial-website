@@ -137,7 +137,7 @@ EQUIPMENT = [
  "name": "Máy phun vữa tô tường", "k": "Thi công tại công trình",
  "img": "img/thiet-bi/may-bom-phun-vua-tw20f.jpg",
  "gallery": ["img/thiet-bi/ung-dung-phun-vua-to.jpg", "img/thiet-bi/ung-dung-phun-vua-tran-tuong.jpg", "img/thiet-bi/ung-dung-gia-co-mai-doc.jpg"],
- "short": "Máy bơm phun vữa dạng bóp ống: cơ giới hóa khâu trộn, bơm và phun vữa tô tường, bơm vữa vách nhẹ, gia cố mái dốc – 3 dòng máy theo quy mô công trình.",
+ "short": "Hai dòng máy phun vữa cho thi công tại công trình: máy bơm phun vữa bóp ống (3 model, bơm xa – bơm cao) và máy phun vữa trục vít cơ động cho tô trát tường.",
  "intro": [
    "Thiếu thợ lành nghề, chi phí nhân công tăng và chất lượng trát tay không đồng đều (bộp, nứt, lớp tô dày mỏng khác nhau) là những điểm nghẽn của công tác tô trát truyền thống. Máy bơm phun vữa cơ giới hóa cả chuỗi: trộn vữa – bơm qua đường ống – phun trực tiếp lên bề mặt.",
    "Dòng máy Core Material giới thiệu dùng nguyên lý bơm bóp ống (squeeze pump): con lăn ép ống bóp để đẩy vữa, vữa chỉ đi trong ống bóp nên ít chi tiết mài mòn tiếp xúc với vữa và việc vệ sinh nhanh gọn.",
@@ -162,7 +162,7 @@ EQUIPMENT = [
  "models_note": "Lưu lượng và khoảng cách là thông số nhà sản xuất công bố; khoảng cách bơm đứng và ngang tối đa không đạt đồng thời. Kết quả thực tế phụ thuộc cấp phối vữa, đặc tính cốt liệu, tỷ lệ phụ gia và bố trí đường ống – cần xác nhận với loại vữa và điều kiện công trường trước khi chọn máy.",
  "apps_title": "Ứng dụng thi công",
  "apps": [
-   ("img/thiet-bi/ung-dung-phun-vua-tran-tuong.jpg", "Phun vữa tô trần, tường"),
+   ("img/thiet-bi/ung-dung-phun-vua-tran-tuong.jpg", "Phun vữa tô tường"),
    ("img/thiet-bi/ung-dung-bom-vua-vach-nhe.jpg", "Bơm vữa vách ngăn nhẹ"),
    ("img/thiet-bi/ung-dung-coffa-de-lai.jpg", "Phun vữa coffa để lại"),
    ("img/thiet-bi/ung-dung-gia-co-mai-doc.jpg", "Gia cố mái dốc, bờ sông"),
@@ -174,14 +174,20 @@ EQUIPMENT = [
    ("Phụ tùng & hỗ trợ", "Phương án phụ tùng (ống bóp, súng phun…) và kênh hỗ trợ kỹ thuật theo thỏa thuận."),
  ],
  "spec": [
-   ("Nguyên lý", "Bơm vữa dạng bóp ống (squeeze pump)"),
-   ("Dòng máy", "TW-60 · TW-20F · TW-75 / TW-105"),
+   ("Nguyên lý", "Bơm bóp ống (squeeze pump) hoặc bơm trục vít (rotor / stator)"),
+   ("Dòng máy", "Bơm bóp ống: TW-60 · TW-20F · TW-75 / TW-105; máy phun vữa trục vít cơ động"),
    ("Lưu lượng", "0,7 – 6 m³/giờ tùy model"),
    ("Khoảng cách bơm tối đa", "đứng đến 60 m, ngang đến 200 m tùy model"),
    ("Nguồn điện", "3 pha 220 V / 50 Hz (tiêu chuẩn); phương án lưới 380 V xác nhận khi đặt hàng"),
    ("Xuất xứ", "Đài Loan"),
  ],
- "videos": [],
+ "line2": {
+   "title": "Dòng máy phun vữa trục vít",
+   "lead": "Dòng máy thứ hai, từ một nhà sản xuất khác: máy phun vữa trục vít cơ động, gọn nhẹ, phù hợp tô trát tường cho công trình vừa và nhỏ.",
+   "gallery": [("img/thiet-bi/may-phun-vua-5.jpg", "Toàn cảnh máy"), ("img/thiet-bi/may-phun-vua-4.jpg", "Phễu chứa có lưới lọc"), ("img/thiet-bi/may-phun-vua-2.jpg", "Mặt sau máy"), ("img/thiet-bi/may-phun-vua-1.jpg", "Tủ điện điều khiển")],
+   "points": ["Bơm trục vít (rotor / stator) đẩy vữa liên tục, lưu lượng ổn định", "Phễu chứa có lưới lọc và mô-tơ rung chống vón cục", "Tủ điện điều khiển, máy nén khí lắp trên máy (theo cấu hình)", "Khung có bánh xe, dễ di chuyển trong công trình", "Thông số kỹ thuật và cấu hình cung cấp theo catalogue – vui lòng liên hệ"],
+ },
+ "videos": [("media/video-phun-vua.mp4", "media/video-phun-vua-poster.jpg", "Máy phun vữa trục vít", "Video từ nhà cung cấp thiết bị")],
  "slots": ["Video/ảnh thi công tại công trình ở Việt Nam", "Kích thước, trọng lượng từng model (chờ catalogue chi tiết)"],
 },
 {
