@@ -44,9 +44,9 @@ MATERIALS = [
  "grades_note": "Sample photos of graded sand. Size ranges are indicative; official values follow the inspection report of each lot.",
  "gallery_title": "Mekong river sand drying & screening plant",
  "gallery": [
-   ("img/san-pham/cat-mekong-xuong-say.jpg", "Rotary dryer & control room"), ("img/san-pham/cat-mekong-mau-so-1.jpg", "Sand sample No. 1"),
-   ("img/san-pham/cat-mekong-mau-so-2.jpg", "Sand sample No. 2"), ("img/san-pham/cat-mekong-dong-bao-jumbo.jpg", "Jumbo bag filling at the plant"),
-   ("img/san-pham/cat-mekong-bao-jumbo.jpg", "Finished jumbo bag"), ("img/san-pham/cat-kho-bao-jumbo-minh-hoa.jpg", "Finished-goods store – 1-tonne jumbo bags (illustration)"), ("img/san-pham/cat-kho-thanh-pham-minh-hoa.jpg", "Jumbo bag storage (illustration)"), ("img/san-pham/cat-bao-jumbo-minh-hoa.jpg", "Illustration of planned Core Material jumbo bag"),
+   ("img/san-pham/cat-mekong-xuong-say.jpg", "Rotary dryer & control room"), 
+   ("img/san-pham/cat-mekong-mau-so-2.jpg", "Sand sample No. 2"), 
+   ("img/san-pham/cat-kho-bao-jumbo-minh-hoa.jpg", "Finished-goods store – 1-tonne jumbo bags (illustration)"), ("img/san-pham/cat-bao-jumbo-minh-hoa.jpg", "Illustration of planned Core Material jumbo bag"),
  ],
  "videos": [("media/video-cat-mekong-xuong.mp4", "media/video-cat-mekong-xuong-poster.jpg", "Sand drying & screening plant", "Mekong river sand"),
             ("media/video-cat-mekong-mau.mp4", "media/video-cat-mekong-mau-poster.jpg", "Checking finished sand", "Mekong river sand")],

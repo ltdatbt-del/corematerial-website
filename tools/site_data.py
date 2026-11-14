@@ -53,9 +53,9 @@ MATERIALS = [
  "grades_note": "Ảnh mẫu cát phân cỡ. Dải cỡ hạt mang tính tham khảo; thông số chính thức theo phiếu kiểm tra của từng lô.",
  "gallery_title": "Xưởng sấy – sàng cát sông Mekong",
  "gallery": [
-   ("img/san-pham/cat-mekong-xuong-say.jpg", "Lò sấy thùng quay & trạm điều khiển"), ("img/san-pham/cat-mekong-mau-so-1.jpg", "Mẫu cát số 1"),
-   ("img/san-pham/cat-mekong-mau-so-2.jpg", "Mẫu cát số 2"), ("img/san-pham/cat-mekong-dong-bao-jumbo.jpg", "Đóng bao Jumbo tại xưởng"),
-   ("img/san-pham/cat-mekong-bao-jumbo.jpg", "Bao Jumbo thành phẩm"), ("img/san-pham/cat-kho-bao-jumbo-minh-hoa.jpg", "Kho thành phẩm – bao Jumbo 1 tấn (hình minh họa)"), ("img/san-pham/cat-kho-thanh-pham-minh-hoa.jpg", "Kho chứa bao Jumbo (hình minh họa)"), ("img/san-pham/cat-bao-jumbo-minh-hoa.jpg", "Minh họa bao Jumbo Core Material (dự kiến)"),
+   ("img/san-pham/cat-mekong-xuong-say.jpg", "Lò sấy thùng quay & trạm điều khiển"), 
+   ("img/san-pham/cat-mekong-mau-so-2.jpg", "Mẫu cát số 2"), 
+   ("img/san-pham/cat-kho-bao-jumbo-minh-hoa.jpg", "Kho thành phẩm – bao Jumbo 1 tấn (hình minh họa)"), ("img/san-pham/cat-bao-jumbo-minh-hoa.jpg", "Minh họa bao Jumbo Core Material (dự kiến)"),
  ],
  "videos": [("media/video-cat-mekong-xuong.mp4", "media/video-cat-mekong-xuong-poster.jpg", "Xưởng sấy – sàng cát", "Cát sông Mekong"),
             ("media/video-cat-mekong-mau.mp4", "media/video-cat-mekong-mau-poster.jpg", "Kiểm tra mẫu cát thành phẩm", "Cát sông Mekong")],
