@@ -107,6 +107,53 @@ MATERIALS = [
    ("img/da-xanh-duong.jpg", "Blue glass"), ("img/hat-luc.jpg", "Green granules"),
  ],
 },
+{
+ "id": "silicon-carbide", "form": "Silicon carbide abrasives (SiC)", "name": "Silicon carbide super-hard abrasives (black & green SiC)", "short": "SiC abrasives",
+ "img": "img/san-pham/sic-minh-hoa.jpg",
+ "img_caption": "Illustration of the SiC crystal structure – real grain photos coming soon",
+ "pledge": [("HARDNESS", "Hardness"), ("PURITY", "Purity"), ("CONSISTENCY", "Consistent grading")],
+ "intro": "Silicon carbide (SiC) is a synthetic abrasive made by fusing quartz sand and petroleum coke in an electric resistance furnace at over 2,000 °C. With a Mohs hardness of 9.2–9.4 – second only to diamond and boron carbide among common abrasives – its grains are sharp and self-sharpening, with high thermal conductivity, low thermal expansion and good chemical resistance. Core Material supplies black and green SiC, from graded sand to ultra-fine powder.",
+ "points": [
+   "Grinding stones and floor-grinding discs for terrazzo, granite and polished concrete; coated and bonded abrasives.",
+   "Anti-slip aggregate for epoxy floors, stairs and industrial floors; surface-hardening aggregate for concrete floors.",
+   "Blasting for cleaning and rust removal, frosting glass and stone; lapping, polishing and wire sawing.",
+   "Refractories and kiln linings for ceramic, brick and steel plants; deoxidiser in metallurgy.",
+   "Macro grits to FEPA (F) and coated-abrasive (P) standards, F/JIS micro powders; 25 kg paper bags or 1-tonne jumbo bags; COA for every lot.",
+   "Other super-hard abrasives (Mohs ≥ 9) on request: white and brown fused alumina, boron carbide.",
+ ],
+ "sources": [
+   ("Black SiC", "Tough and cost-effective. For grinding cast iron, non-ferrous metals, natural stone, concrete and rubber; blasting; refractories and metallurgical additive.", ["Graded sand 0–1 / 1–3 / 3–5 mm", "Macro grits F12 – F220", "P12 – P220", "Micro powder F230 – F1200", "P240 – P1200"]),
+   ("Green SiC", "Higher purity (SiC ≥ 99%), harder and sharper. For precision grinding and polishing of cemented carbide, technical ceramics, glass, quartz and gemstones; final polishing steps.", ["Macro grits F12 – F220", "P24 – P240", "Micro powder F230 – F1200", "JIS #240 – #3000"]),
+ ],
+ "tables": [
+   ("Typical properties", ["Property", "Black SiC", "Green SiC"], [
+     ["SiC (%)", "90 – 99 (by grade)", "97.5 – 99.5"],
+     ["Fe₂O₃ (%)", "0.10 – 0.35", "0.05 – 0.25"],
+     ["Free carbon – F.C (%)", "0.10 – 0.35", "0.05 – 0.25"],
+     ["Mohs hardness", "9.2", "9.4"],
+     ["True density (g/cm³)", "3.20 – 3.25", "3.20 – 3.25"],
+     ["Max. service temperature", "~1,900 °C", "~1,900 °C"],
+   ], ""),
+   ("Grades by application", ["Group", "Min. SiC", "Sizes", "Applications"], [
+     ["Abrasives", "98.5%", "FEPA & JIS", "Grinding, polishing, wire sawing, blasting"],
+     ["Ceramic powder", "99%", "On request", "Technical ceramics, polishing"],
+     ["Refractory", "90%", "0–1, 1–3, 3–5 mm", "Refractories, metallurgical additive"],
+   ], ""),
+   ("F macro grits – chemical composition", ["Grit", "Type", "SiC ≥ (%)", "Fe₂O₃ ≤ (%)", "F.C ≤ (%)", "Bulk density (g/cm³)"], [
+     ["F24 – F120", "Black SiC", "98.5", "0.20", "0.20", "1.41 – 1.59"],
+     ["F150 – F220", "Black SiC", "98.0", "0.25", "0.25", "1.29 – 1.47"],
+     ["F24 – F120", "Green SiC", "99.0", "0.15", "0.15", "1.38 – 1.60"],
+     ["F150 – F220", "Green SiC", "98.5", "0.20", "0.20", "1.30 – 1.48"],
+   ], ""),
+   ("F micro powders – median size D50 & SiC content", ["Grit", "D50 (µm)", "Black SiC ≥ (%)", "Green SiC ≥ (%)"], [
+     ["F240", "44.5 ± 2.0", "99", "99"], ["F280", "36.5 ± 1.5", "99", "99"], ["F320", "29.2 ± 1.5", "99", "99"],
+     ["F360", "22.8 ± 1.5", "99", "99"], ["F400", "17.3 ± 1.0", "99", "99"], ["F500", "12.8 ± 1.0", "98.5", "99"],
+     ["F600", "9.3 ± 1.0", "98.5", "99"], ["F800", "6.5 ± 1.0", "98.5", "98.5"], ["F1000", "4.5 ± 0.8", "98", "97"],
+     ["F1200", "3.0 ± 0.5", "97.5", "96.5"],
+   ], "Typical values. Official values per lot certificate (COA); a detailed table for each grit size is sent with quotations."),
+ ],
+ "slots": ["Real black / green SiC sample photos", "Official TDS / COA"],
+},
 ]
 
 TECH_INTRO = "Core Material is building an equipment and technology trading business, connecting suitable suppliers with production and construction needs in Vietnam."
@@ -235,7 +282,7 @@ PROCESS = [
 SCOPE_NOTE = "Scope of supply and support is defined per equipment and per specific agreement."
 
 FORM_GROUPS = [
- ("Raw materials & Materials", ["Dry sand", "White cement", "VAE / RDP", "Concrete reinforcing fibres", "Terrazzo chips / colour granules / pigments"]),
+ ("Raw materials & Materials", ["Dry sand", "White cement", "VAE / RDP", "Concrete reinforcing fibres", "Terrazzo chips / colour granules / pigments", "Silicon carbide abrasives (SiC)"]),
  ("Equipment & Automation", [e["form"] for e in EQUIPMENT]),
  ("Other", ["Investment partnership", "Other"]),
 ]

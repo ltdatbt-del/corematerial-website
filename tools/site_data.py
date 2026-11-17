@@ -116,6 +116,53 @@ MATERIALS = [
    ("img/da-xanh-duong.jpg", "Thủy tinh xanh dương"), ("img/hat-luc.jpg", "Hạt xanh lá"),
  ],
 },
+{
+ "id": "hat-mai-sic", "form": "Hạt mài Silicon Carbide (SiC)", "name": "Hạt mài siêu cứng Silicon Carbide (SiC đen & SiC xanh)", "short": "Hạt mài SiC",
+ "img": "img/san-pham/sic-minh-hoa.jpg",
+ "img_caption": "Hình minh họa cấu trúc tinh thể SiC – ảnh mẫu hạt thật sẽ cập nhật",
+ "pledge": [("HARDNESS", "Độ cứng"), ("PURITY", "Độ tinh khiết"), ("CONSISTENCY", "Đồng đều cỡ hạt")],
+ "intro": "Silicon carbide (SiC) là hạt mài nhân tạo được nấu từ cát thạch anh và cốc dầu mỏ trong lò điện trở ở nhiệt độ trên 2.000 °C. Hạt có độ cứng Mohs 9,2–9,4 – chỉ đứng sau kim cương và boron carbide trong nhóm vật liệu mài thông dụng – sắc cạnh, tự tạo cạnh mới khi mài, dẫn nhiệt tốt, giãn nở nhiệt thấp và bền hóa học. Core Material cung cấp hai dòng SiC đen và SiC xanh, từ cát phân đoạn đến bột siêu mịn.",
+ "points": [
+   "Đá mài, đĩa mài sàn terrazzo, đá granite, bê tông mài; giấy nhám và dụng cụ mài liên kết.",
+   "Hạt chống trơn trượt cho sàn epoxy, cầu thang, sàn công nghiệp; hạt tăng cứng bề mặt sàn bê tông.",
+   "Phun cát làm sạch – tẩy gỉ kim loại, khắc mờ kính và đá; mài nghiền, đánh bóng, cắt dây.",
+   "Vật liệu chịu lửa, lót lò cho nhà máy gốm sứ, gạch, thép; phụ gia khử oxy trong luyện kim.",
+   "Hạt thô theo chuẩn FEPA (F) và giấy nhám (P), bột mịn F/JIS; đóng gói bao giấy 25 kg hoặc bao Jumbo 1 tấn; COA theo từng lô.",
+   "Cung cấp theo yêu cầu các hạt mài siêu cứng khác (Mohs ≥ 9): nhôm oxit nung chảy trắng & nâu, boron carbide.",
+ ],
+ "sources": [
+   ("SiC đen (Black SiC)", "Dai, giá kinh tế. Phù hợp mài gang, kim loại màu, đá tự nhiên, bê tông, cao su; phun cát; vật liệu chịu lửa và phụ gia luyện kim.", ["Cát phân đoạn 0–1 / 1–3 / 3–5 mm", "Hạt thô F12 – F220", "P12 – P220", "Bột mịn F230 – F1200", "P240 – P1200"]),
+   ("SiC xanh (Green SiC)", "Tinh khiết hơn (SiC ≥ 99%), cứng và sắc hơn. Phù hợp mài – đánh bóng chính xác hợp kim cứng, gốm kỹ thuật, kính, thạch anh, đá quý; bước đánh bóng hoàn thiện.", ["Hạt thô F12 – F220", "P24 – P240", "Bột mịn F230 – F1200", "JIS #240 – #3000"]),
+ ],
+ "tables": [
+   ("Tính chất tiêu biểu", ["Chỉ tiêu", "SiC đen", "SiC xanh"], [
+     ["SiC (%)", "90 – 99 (tùy mác)", "97,5 – 99,5"],
+     ["Fe₂O₃ (%)", "0,10 – 0,35", "0,05 – 0,25"],
+     ["Cacbon tự do – F.C (%)", "0,10 – 0,35", "0,05 – 0,25"],
+     ["Độ cứng Mohs", "9,2", "9,4"],
+     ["Tỷ trọng thực (g/cm³)", "3,20 – 3,25", "3,20 – 3,25"],
+     ["Nhiệt độ sử dụng tối đa", "~1.900 °C", "~1.900 °C"],
+   ], ""),
+   ("Phân loại theo mục đích sử dụng", ["Nhóm", "SiC tối thiểu", "Cỡ hạt", "Ứng dụng"], [
+     ["Hạt mài (Abrasives)", "98,5%", "Chuẩn FEPA & JIS", "Mài, đánh bóng, cắt dây, phun cát"],
+     ["Bột gốm (Ceramic powder)", "99%", "Theo yêu cầu", "Gốm kỹ thuật, đánh bóng"],
+     ["Chịu lửa (Refractory)", "90%", "0–1, 1–3, 3–5 mm", "Vật liệu chịu lửa, phụ gia luyện kim"],
+   ], ""),
+   ("Hạt thô chuẩn F – thành phần hóa", ["Cỡ hạt", "Loại", "SiC ≥ (%)", "Fe₂O₃ ≤ (%)", "F.C ≤ (%)", "Tỷ trọng đổ đống (g/cm³)"], [
+     ["F24 – F120", "SiC đen", "98,5", "0,20", "0,20", "1,41 – 1,59"],
+     ["F150 – F220", "SiC đen", "98,0", "0,25", "0,25", "1,29 – 1,47"],
+     ["F24 – F120", "SiC xanh", "99,0", "0,15", "0,15", "1,38 – 1,60"],
+     ["F150 – F220", "SiC xanh", "98,5", "0,20", "0,20", "1,30 – 1,48"],
+   ], ""),
+   ("Bột mịn chuẩn F – cỡ hạt trung bình D50 & hàm lượng SiC", ["Cỡ", "D50 (µm)", "SiC đen ≥ (%)", "SiC xanh ≥ (%)"], [
+     ["F240", "44,5 ± 2,0", "99", "99"], ["F280", "36,5 ± 1,5", "99", "99"], ["F320", "29,2 ± 1,5", "99", "99"],
+     ["F360", "22,8 ± 1,5", "99", "99"], ["F400", "17,3 ± 1,0", "99", "99"], ["F500", "12,8 ± 1,0", "98,5", "99"],
+     ["F600", "9,3 ± 1,0", "98,5", "99"], ["F800", "6,5 ± 1,0", "98,5", "98,5"], ["F1000", "4,5 ± 0,8", "98", "97"],
+     ["F1200", "3,0 ± 0,5", "97,5", "96,5"],
+   ], "Thông số tham khảo. Thông số chính thức theo phiếu kiểm tra (COA) của từng lô hàng; bảng chi tiết từng cỡ hạt gửi kèm báo giá."),
+ ],
+ "slots": ["Ảnh mẫu hạt SiC đen / SiC xanh thật (chụp mẫu Core)", "TDS / COA bản chính thức"],
+},
 ]
 
 # ---------------- MÁY MÓC & TỰ ĐỘNG HÓA ----------------
@@ -246,7 +293,7 @@ SCOPE_NOTE = "Phạm vi cung cấp và hỗ trợ được xác định theo t�
 
 # Nhóm cho form liên hệ
 FORM_GROUPS = [
- ("Nguyên liệu & Vật liệu", ["Cát khô", "Xi măng trắng", "VAE / RDP", "Sợi gia cường bê tông", "Đá mài / hạt màu / bột màu"]),
+ ("Nguyên liệu & Vật liệu", ["Cát khô", "Xi măng trắng", "VAE / RDP", "Sợi gia cường bê tông", "Đá mài / hạt màu / bột màu", "Hạt mài Silicon Carbide (SiC)"]),
  ("Máy móc & Tự động hóa", [e["form"] for e in EQUIPMENT]),
  ("Khác", ["Hợp tác đầu tư", "Khác"]),
 ]
