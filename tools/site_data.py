@@ -121,7 +121,7 @@ MATERIALS = [
  "img": "img/san-pham/sic-minh-hoa.jpg",
  "img_caption": "Hình minh họa cấu trúc tinh thể SiC – ảnh mẫu hạt thật sẽ cập nhật",
  "pledge": [("HARDNESS", "Độ cứng"), ("PURITY", "Độ tinh khiết"), ("CONSISTENCY", "Đồng đều cỡ hạt")],
- "intro": "Silicon carbide (SiC) là hạt mài nhân tạo được nấu từ cát thạch anh và cốc dầu mỏ trong lò điện trở ở nhiệt độ trên 2.000 °C. Hạt có độ cứng Mohs 9,2–9,4 – chỉ đứng sau kim cương và boron carbide trong nhóm vật liệu mài thông dụng – sắc cạnh, tự tạo cạnh mới khi mài, dẫn nhiệt tốt, giãn nở nhiệt thấp và bền hóa học. Core Material cung cấp hai dòng SiC đen và SiC xanh, từ cát phân đoạn đến bột siêu mịn.",
+ "intro": "Silicon carbide (SiC) là hạt mài nhân tạo được nấu từ cát thạch anh và cốc dầu mỏ trong lò điện trở ở nhiệt độ trên 2.000 °C. Hạt có độ cứng Mohs 9,2–9,4 – chỉ đứng sau kim cương, CBN và boron carbide trong nhóm vật liệu mài thông dụng – sắc cạnh, tự tạo cạnh mới khi mài, dẫn nhiệt tốt, giãn nở nhiệt thấp và bền hóa học. Core Material cung cấp hai dòng SiC đen và SiC xanh, từ cát phân đoạn đến bột siêu mịn.",
  "points": [
    "Đá mài, đĩa mài sàn terrazzo, đá granite, bê tông mài; giấy nhám và dụng cụ mài liên kết.",
    "Hạt chống trơn trượt cho sàn epoxy, cầu thang, sàn công nghiệp; hạt tăng cứng bề mặt sàn bê tông.",

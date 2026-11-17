@@ -112,7 +112,7 @@ MATERIALS = [
  "img": "img/san-pham/sic-minh-hoa.jpg",
  "img_caption": "Illustration of the SiC crystal structure – real grain photos coming soon",
  "pledge": [("HARDNESS", "Hardness"), ("PURITY", "Purity"), ("CONSISTENCY", "Consistent grading")],
- "intro": "Silicon carbide (SiC) is a synthetic abrasive made by fusing quartz sand and petroleum coke in an electric resistance furnace at over 2,000 °C. With a Mohs hardness of 9.2–9.4 – second only to diamond and boron carbide among common abrasives – its grains are sharp and self-sharpening, with high thermal conductivity, low thermal expansion and good chemical resistance. Core Material supplies black and green SiC, from graded sand to ultra-fine powder.",
+ "intro": "Silicon carbide (SiC) is a synthetic abrasive made by fusing quartz sand and petroleum coke in an electric resistance furnace at over 2,000 °C. With a Mohs hardness of 9.2–9.4 – second only to diamond, CBN and boron carbide among common abrasives – its grains are sharp and self-sharpening, with high thermal conductivity, low thermal expansion and good chemical resistance. Core Material supplies black and green SiC, from graded sand to ultra-fine powder.",
  "points": [
    "Grinding stones and floor-grinding discs for terrazzo, granite and polished concrete; coated and bonded abrasives.",
    "Anti-slip aggregate for epoxy floors, stairs and industrial floors; surface-hardening aggregate for concrete floors.",

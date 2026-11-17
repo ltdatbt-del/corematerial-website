@@ -127,6 +127,101 @@ ARTICLES = [
     ("JC/T 940 – Sản phẩm trang trí GRC (tiêu chuẩn ngành vật liệu xây dựng Trung Quốc)", None),
 ],
 },
+# ---------------------------------------------------------------- SiC
+{
+"slug": "silicon-carbide-hat-mai-sieu-cung-chon-loai-va-co-hat",
+"cat": "vat-lieu",
+"date": "17/11/2026",
+"read": 9,
+"img": "sic-silicon-carbide.jpg",
+"title": "Silicon carbide (SiC): hạt mài siêu cứng – chọn SiC đen hay xanh, cỡ hạt nào cho mài sàn, chống trơn trượt và chịu lửa",
+"excerpt": "SiC là hạt mài nhân tạo rất cứng – trong nhóm vật liệu mài thông dụng chỉ đứng sau kim cương, CBN và boron carbide. Bài này giải thích SiC đen khác SiC xanh thế nào, đọc ký hiệu cỡ hạt F – P – JIS ra sao, và chọn loại nào cho mài terrazzo, sàn chống trơn trượt, phun cát hay vật liệu chịu lửa.",
+"body": """
+<p>Nhắc đến vật liệu mài, nhiều người nghĩ ngay đến kim cương. Nhưng phần lớn công việc mài, cắt, phun cát và làm vật liệu chịu lửa hằng ngày lại dùng một vật liệu rẻ hơn nhiều: <b>silicon carbide (SiC)</b>, trong nghề còn gọi là carborundum hay “kim cương sa”. SiC có độ cứng Mohs khoảng <b>9,2 – 9,4</b>, cao hơn nhôm oxit nung chảy (Mohs 9), và giá chỉ bằng một phần nhỏ so với kim cương hay boron carbide.</p>
+
+<h2>1. SiC được làm ra như thế nào?</h2>
+<p>SiC trong tự nhiên (khoáng moissanite) rất hiếm, nên gần như toàn bộ SiC công nghiệp là nhân tạo. Nguyên liệu chính là <b>cát thạch anh (SiO₂)</b> và <b>cốc dầu mỏ (C)</b>, nạp vào lò điện trở kiểu Acheson và nung đến khoảng 2.000 – 2.500 °C. Phản ứng tổng quát:</p>
+<div class="note">SiO₂ + 3C → SiC + 2CO</div>
+<p>Khối SiC thô sau khi nguội được đập, nghiền, làm sạch (tách từ, rửa axit với hàng cao cấp) rồi sàng hoặc phân cấp thành từng cỡ hạt. Tinh thể SiC dạng lục giác, rất cứng và sắc cạnh. Điểm đáng giá là hạt <b>giòn vừa đủ</b>: khi cạnh cắt bị mòn, hạt vỡ ra tạo cạnh sắc mới – gọi là tính tự sắc (self-sharpening).</p>
+
+<h2>2. SiC đen và SiC xanh khác nhau thế nào?</h2>
+<p>Hai loại được nấu cùng một nguyên lý nhưng khác về nguyên liệu và độ tinh khiết. SiC xanh dùng nguyên liệu chọn lọc hơn, thường thêm muối ăn để kéo tạp chất ra khỏi khối nấu.</p>
+<table>
+<tr><th>Tiêu chí</th><th>SiC đen</th><th>SiC xanh</th></tr>
+<tr><td>Hàm lượng SiC điển hình</td><td>~98 – 99% (hàng chịu lửa 90%+)</td><td>~98,5 – 99,5%</td></tr>
+<tr><td>Độ cứng Mohs</td><td>~9,2</td><td>~9,4</td></tr>
+<tr><td>Tính chất hạt</td><td>Dai hơn, chịu va đập tốt hơn</td><td>Cứng, giòn, sắc hơn</td></tr>
+<tr><td>Giá</td><td>Kinh tế hơn</td><td>Cao hơn</td></tr>
+<tr><td>Hợp với</td><td>Đá tự nhiên, bê tông, gang, kim loại màu, cao su; phun cát; chịu lửa, luyện kim</td><td>Hợp kim cứng, gốm kỹ thuật, kính, thạch anh, đá quý; đánh bóng chính xác</td></tr>
+</table>
+<p>Quy tắc dễ nhớ: <b>gia công thô và vừa, vật liệu xây dựng, chịu lửa → SiC đen</b>; <b>gia công tinh, vật liệu rất cứng và giòn, yêu cầu bề mặt cao → SiC xanh</b>.</p>
+<div class="note"><b>Không phải lúc nào 99% cũng tốt hơn.</b> Với mài sàn, phun cát hay gạch chịu lửa, SiC đen 97 – 98,5% thường cho hiệu quả tương đương mà chi phí thấp hơn đáng kể. Độ tinh khiết cao chỉ thật sự đáng tiền ở các khâu đánh bóng chính xác, nơi một hạt lạ có thể gây vết xước.</div>
+
+<h2>3. Đọc ký hiệu cỡ hạt: mm, F, P, JIS</h2>
+<p>Cùng là SiC nhưng cách gọi cỡ hạt khác nhau theo mục đích sử dụng:</p>
+<ul>
+<li><b>Cát phân đoạn (tính bằng mm):</b> 0–1, 1–3, 3–5, 5–8 mm… dùng cho vật liệu chịu lửa, luyện kim, cốt liệu chống mài mòn. Người mua thường phối nhiều đoạn để đạt độ đặc chắc mong muốn.</li>
+<li><b>Hạt thô chuẩn F (FEPA) – F12 đến F220:</b> phân loại bằng sàng; số càng lớn hạt càng nhỏ. Dùng cho đá mài, đĩa mài, phun cát, hạt chống trơn trượt.</li>
+<li><b>Bột mịn chuẩn F – F230 đến F1200 (có thể đến F2000):</b> phân cấp bằng lắng hoặc khí động học, đặc trưng bằng cỡ hạt trung bình D50. Dùng cho mài nghiền, đánh bóng, gốm kỹ thuật.</li>
+<li><b>Chuẩn P (FEPA/ISO 6344):</b> dành riêng cho giấy nhám, dải cỡ hạt khác chuẩn F dù số hiệu giống nhau.</li>
+<li><b>JIS (Nhật Bản):</b> hay gặp ở bột mịn, ví dụ #240 – #3000. Số JIS và số F gần tương ứng nhưng không trùng nhau.</li>
+</ul>
+<p>Bảng quy đổi gần đúng cỡ hạt danh nghĩa của một số cỡ F thông dụng:</p>
+<table>
+<tr><th>Cỡ F</th><th>Cỡ hạt danh nghĩa</th><th>Cỡ F</th><th>D50 bột mịn (µm)</th></tr>
+<tr><td>F16</td><td>~1,2 mm</td><td>F240</td><td>44,5 ± 2,0</td></tr>
+<tr><td>F24</td><td>~0,71 mm</td><td>F320</td><td>29,2 ± 1,5</td></tr>
+<tr><td>F36</td><td>~0,50 mm</td><td>F400</td><td>17,3 ± 1,0</td></tr>
+<tr><td>F60</td><td>~0,25 mm</td><td>F600</td><td>9,3 ± 1,0</td></tr>
+<tr><td>F80</td><td>~0,18 mm</td><td>F800</td><td>6,5 ± 1,0</td></tr>
+<tr><td>F120</td><td>~0,125 mm</td><td>F1000</td><td>4,5 ± 0,8</td></tr>
+<tr><td>F220</td><td>~0,075 mm</td><td>F1200</td><td>3,0 ± 0,5</td></tr>
+</table>
+<div class="note"><b>Lưu ý khi hỏi giá:</b> một cỡ F là một <i>dải phân bố</i>, không phải một con số đường kính duy nhất. Khi đặt hàng, luôn ghi rõ chuẩn (F, P hay JIS) – cùng con số “400” nhưng khác chuẩn có thể chênh đáng kể về cỡ hạt.</div>
+
+<h2>4. Chọn SiC cho các ứng dụng trong xây dựng</h2>
+<h3>Mài sàn terrazzo, đá granite, bê tông mài</h3>
+<p>SiC là hạt mài truyền thống trong đá mài liên kết magnesite, resin hay xi măng dùng cho máy mài sàn và mài đá. Nguyên tắc là mài theo từng bước từ thô đến tinh:</p>
+<ul>
+<li><b>Mài thô, phá mặt, san phẳng:</b> SiC đen khoảng F16 – F46.</li>
+<li><b>Mài trung gian, xóa vết mài thô:</b> khoảng F60 – F220.</li>
+<li><b>Mài tinh và đánh bóng:</b> từ F320 trở lên, có thể chuyển sang SiC xanh ở các bước cuối.</li>
+</ul>
+<p>Không nên nhảy cóc quá xa giữa hai cấp: vết xước sâu của cấp trước sẽ tốn nhiều thời gian hơn để xóa ở cấp sau.</p>
+
+<h3>Sàn chống trơn trượt</h3>
+<p>Hạt SiC được rắc lên lớp phủ epoxy/PU còn ướt, hoặc trộn vào lớp hoàn thiện, để tạo độ nhám bền lâu cho sàn nhà xưởng, ram dốc, cầu thang, sàn khu ướt. Vì cứng hơn cát thạch anh nhiều, hạt SiC giữ được độ nhám lâu dưới lưu lượng đi lại và xe đẩy. Cỡ hạt thường nằm trong khoảng F16 – F60: hạt càng to, độ nhám càng cao nhưng càng khó vệ sinh.</p>
+
+<h3>Phun cát và xử lý bề mặt</h3>
+<p>SiC đen cỡ trung bình (khoảng F36 – F120) cắt nhanh, dùng để làm sạch, tẩy gỉ, tạo nhám bề mặt kim loại và đá, khắc mờ kính trang trí. Hạt cứng nên có thể thu hồi và tái sử dụng nhiều vòng trong buồng phun kín.</p>
+
+<h3>Vật liệu chịu lửa và luyện kim</h3>
+<p>Nhờ dẫn nhiệt cao, giãn nở nhiệt thấp và chịu sốc nhiệt tốt, SiC (thường 90 – 98%, dạng cát 0–5 mm và bột mịn) là cốt liệu cho gạch chịu lửa, bê tông chịu lửa, tấm kê lò nung gốm sứ, gạch. Trong luyện thép và đúc gang, SiC còn được dùng làm phụ gia khử oxy và bổ sung silic, cacbon.</p>
+
+<h2>5. Kiểm tra gì khi nhận hàng?</h2>
+<p>Con số “98,5% SiC” trên nhãn chưa đủ nói lên chất lượng. Một phiếu kiểm tra (COA) đáng tin nên có:</p>
+<ul>
+<li><b>Hàm lượng SiC</b> tối thiểu theo mác.</li>
+<li><b>Cacbon tự do (F.C)</b> và <b>Fe₂O₃</b>: cacbon tự do cao làm hạt “mềm”, sắt cao ảnh hưởng tới liên kết đá mài và vật liệu chịu lửa.</li>
+<li><b>Phân bố cỡ hạt</b>: với bột mịn cần cả D3, D50, D94 chứ không chỉ D50 – hạt quá cỡ là nguyên nhân hàng đầu gây xước khi đánh bóng.</li>
+<li><b>Tỷ trọng đổ đống, độ ẩm, tạp chất từ tính</b> khi ứng dụng yêu cầu.</li>
+</ul>
+<p>Với đơn hàng đầu tiên, nên chạy thử mẫu trên thiết bị và vật liệu thật của mình trước khi đặt số lượng lớn.</p>
+
+<h2>6. An toàn khi sử dụng</h2>
+<p>SiC trơ hóa học nhưng bụi mịn vẫn gây hại đường hô hấp. Khi rót, trộn, phun hay mài khô cần đeo khẩu trang chống bụi đạt chuẩn, kính bảo hộ, và ưu tiên mài ướt hoặc có hút bụi. Bảo quản bao kín, khô ráo để tránh hút ẩm và lẫn tạp chất.</p>
+
+<h2>Kết luận</h2>
+<p>SiC là lựa chọn cân bằng giữa độ cứng và chi phí cho rất nhiều công việc trong ngành vật liệu xây dựng. Chọn đúng <b>loại (đen hay xanh)</b>, đúng <b>chuẩn và cỡ hạt</b>, và yêu cầu <b>COA đầy đủ</b> là ba bước giúp tránh lãng phí. Core Material cung cấp SiC đen và SiC xanh từ cát phân đoạn đến bột mịn F1200 – xem thông số tại <a href="https://www.corematerial.vn/vat-lieu/#hat-mai-sic">trang sản phẩm hạt mài SiC</a> hoặc <a href="https://www.corematerial.vn/lien-he/">liên hệ</a> để nhận mẫu thử.</p>
+""",
+"sources": [
+    ("FEPA 42-1 / 42-2 – Grains of fused aluminium oxide, silicon carbide and other abrasive materials for bonded abrasives (macrogrits F4–F220; microgrits F230–F2000)", None),
+    ("ISO 8486-1/-2 – Bonded abrasives: Determination and designation of grain size distribution", None),
+    ("ISO 6344 – Coated abrasives: Grain size analysis (P grades)", None),
+    ("JIS R 6001 – Bonded abrasive grain sizes", None),
+    ("Tài liệu kỹ thuật (TDS) silicon carbide của nhà sản xuất, 2026", None),
+],
+},
 # ---------------------------------------------------------------- GRC-4
 {
 "slug": "truoc-khi-mua-may-phun-grc-10-cau-can-hoi",
@@ -619,5 +714,6 @@ LIBRARY = [
     ("Cellulose ether (HPMC)", "Phụ gia giữ nước, tăng độ dẻo và thời gian thi công cho vữa, keo dán gạch."),
     ("Xỉ lò cao nghiền mịn", "Phụ phẩm luyện thép, phụ gia khoáng hoạt tính giúp giảm clinker và tăng độ bền."),
     ("Hạt thủy tinh tái chế", "Cốt liệu trang trí cho terrazzo, bê tông nghệ thuật; nhiều màu, nhiều cỡ."),
+    ("Silicon carbide (SiC)", "Hạt mài nhân tạo Mohs 9,2–9,4 – cho đá mài, phun cát, sàn chống trơn trượt và vật liệu chịu lửa."),
     ("Bột màu oxit", "Pigment vô cơ bền ánh sáng, tạo màu cho vữa, gạch terrazzo, bê tông."),
 ]
