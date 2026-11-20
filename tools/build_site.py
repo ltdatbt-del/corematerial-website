@@ -30,7 +30,7 @@ DEFAULT_DESC = "Core Material JSC kết nối nguồn cung nguyên liệu, thi�
 def slot(text, cls=""):
     return f'<div class="ph-box {cls}">BẢN XEM TRƯỚC – Chờ bổ sung:<br>{e(text)}</div>' if PREVIEW else ""
 
-def page(path, title, desc, body, active=None, og_img="/img/og-image.jpg", extra_head=""):
+def page(path, title, desc, body, active=None, og_img="/img/og-image-v2.jpg", extra_head=""):
     canon = SITE + path
     nav = "".join(f'<a href="{u}"{" class=on" if active==u else ""}>{e(t)}</a>' for u,t in MENU)
     org = {"@context":"https://schema.org","@type":"Organization","name":COMPANY["brand"],"legalName":COMPANY["legal"].title().replace("Cổ Phần","Cổ phần"),
@@ -286,7 +286,7 @@ for q in EQUIPMENT:
   <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:8px"><a class="btn btn-dark" href="{contact_href(q["form"])}">Trao đổi nhu cầu thiết bị {ARROW}</a><a class="btn btn-line" href="/may-moc/">← Tất cả thiết bị</a></div>
  </div></div></div></section>{models}{line2}{apps_g}{pkg}{vids}
 <section class="paper"><div class="wrap"><span class="tag">Quy trình</span><h2>Tư vấn và triển khai</h2>{steps()}</div></section>'''
-    write(f"/may-moc/{q['id']}/", page(f"/may-moc/{q['id']}/", f"{q['name']} | Core Material JSC", q["short"], body, "/may-moc/", ("/"+q["img"]) if q["img"] else "/img/og-image.jpg"))
+    write(f"/may-moc/{q['id']}/", page(f"/may-moc/{q['id']}/", f"{q['name']} | Core Material JSC", q["short"], body, "/may-moc/", ("/"+q["img"]) if q["img"] else "/img/og-image-v2.jpg"))
 
 # =================== ỨNG DỤNG & VIDEO ===================
 apps = [("Nhà máy vữa khô, keo dán gạch", "Cát khô phân cỡ, xi măng trắng, phụ gia VAE/RDP; tự động hóa bốc xếp và xếp pallet.", "/vat-lieu/"),
